@@ -1,5 +1,5 @@
 // Illustrative room layout built from the features the hotel lists for every room:
-// private balcony, bedroom with its own bathroom, desk and chair, sofa, large wardrobe.
+// bedroom with its own bathroom, desk and chair, sofa, large wardrobe.
 import type { CSSProperties, ReactElement } from 'react';
 
 export function RoomPlan({ beds = 'double', name }: { beds?: 'double' | 'twin'; name: string }) {
@@ -7,9 +7,7 @@ export function RoomPlan({ beds = 'double', name }: { beds?: 'double' | 'twin'; 
   const s = () => ({ pathLength: 1, style: { ['--i' as string]: i++ } as CSSProperties });
   const e: ReactElement[] = [];
   e.push(<rect key="room" {...s()} x="20" y="60" width="360" height="220" strokeWidth="2.4" />);
-  // balcony and window wall
-  e.push(<path key="bal" {...s()} d="M60 60 V20 H340 V60" />);
-  e.push(<path key="rail" {...s()} d="M60 26 H340" strokeDasharray="3 3" strokeWidth="0.8" />);
+  // window wall
   e.push(<path key="win" {...s()} d="M80 60 H320 M80 64 H320 M140 58 V66 M200 58 V66 M260 58 V66" strokeWidth="1" />);
   // bathroom
   e.push(<path key="bath" {...s()} d="M250 180 V280 M250 180 H380" strokeWidth="1.8" />);
@@ -37,10 +35,10 @@ export function RoomPlan({ beds = 'double', name }: { beds?: 'double' | 'twin'; 
   e.push(<rect key="sofa" {...s()} x="24" y="80" width="30" height="80" rx="5" strokeWidth="1" />);
   return (
     <svg viewBox="0 0 400 330" role="img" aria-labelledby={`rp-${name}`} fill="none" stroke="currentColor" strokeWidth="1.2">
-      <title id={`rp-${name}`}>{`Illustrative layout of the ${name}: balcony along the window wall, bed, desk, sofa, wardrobe and private bathroom`}</title>
+      <title id={`rp-${name}`}>{`Illustrative layout of the ${name}: windows along the outer wall, bed, desk, sofa, wardrobe and private bathroom`}</title>
       {e}
       <g fill="currentColor" stroke="none" fontFamily="var(--font-body)" fontSize="10" fontWeight="700" letterSpacing="1.2">
-        <text x="200" y="44" textAnchor="middle">BALCONY</text>
+        <text x="200" y="44" textAnchor="middle">WINDOWS</text>
         <text x="315" y="168" textAnchor="middle">DESK</text>
         <text x="39" y="176" textAnchor="middle">SOFA</text>
         <text x="315" y="212" textAnchor="middle">BATH</text>

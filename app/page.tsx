@@ -44,7 +44,7 @@ export default function Home() {
           <div className="head">
             <h2 id="rooms-title" className="reveal">Rooms with the square in view</h2>
             <p className="lede reveal">
-              Every room has a private balcony, its own bathroom, air conditioning, Wi-Fi and buffet breakfast. Choose a room and
+              Every room has its own bathroom, air conditioning, Wi-Fi and buffet breakfast. Choose a room and
               see your stay come together.
             </p>
           </div>

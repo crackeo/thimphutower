@@ -8,7 +8,7 @@ import { IconArrow } from './Icons';
 // Real photographs of, or taken from, the hotel on Clock Tower Square.
 const SCENES = [
   { id: 'festival', label: 'Festival', img: 'festival-from-window', caption: 'Festival day on Clock Tower Square, seen through one of our windows.' },
-  { id: 'morning', label: 'Morning', img: 'breakfast-view', caption: 'Breakfast on the balcony, above the square.' },
+  { id: 'morning', label: 'Morning', img: 'breakfast-view', caption: 'Breakfast by the window, above the square.' },
   { id: 'dusk', label: 'Dusk', img: 'facade-dusk', caption: 'Thimphu Tower at dusk, on the edge of the square.' },
   { id: 'snow', label: 'Snow', img: 'snow-square', caption: 'First snow on Clock Tower Square, from the hotel.' },
 ];
@@ -66,7 +66,7 @@ export function Hero() {
             The hotel on <em>Clock Tower Square</em>
           </h1>
           <p className="lede measure reveal">
-            {hotel.rooms} rooms in the heart of Thimphu, overlooking the square and the Changlimithang stadium. A boutique design
+            Right in the centre of Thimphu, next to the Thimphu Clock Tower: {hotel.rooms} rooms overlooking the square and the Changlimithang stadium. A boutique design
             hotel, welcoming travellers since {hotel.since}.
           </p>
           <form className="ebar reveal" action="/contact/#enquire" method="get" onSubmit={submit} aria-label="Start an enquiry">

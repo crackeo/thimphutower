@@ -35,6 +35,7 @@ Every "Enquire" button opens a 5-step drawer: Dates → Room → Guests → Deta
 - 58 gallery photos and their captions (46 used).
 
 **Cleaned:**
+- "Private balcony" removed everywhere: the hotel confirmed (2026-11-03) that the building has no balconies, although the old site listed one in every room.
 - Typos fixed: Dobule, Childern, Vission, Thimpu, "High Comet Toilet", "3 star star".
 - Room descriptions rewritten, because each one named the wrong room type ("King Suite", "Double", "Deluxe Rooms").
 - The "Pemako" copy, taken from another hotel's site, rewritten for this hotel.

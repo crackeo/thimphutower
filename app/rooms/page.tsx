@@ -9,7 +9,7 @@ import { facilities, inRoom, nu, rooms, roomServices } from '@/content/site';
 
 export const metadata: Metadata = pageMeta({
   title: 'Rooms & rates in central Thimphu',
-  description: 'Deluxe and Premium rooms on Clock Tower Square, Thimphu, from Nu 4,500 a night. Private balcony, bathroom, Wi-Fi and buffet breakfast in every room.',
+  description: 'Deluxe and Premium rooms on Clock Tower Square, Thimphu, from Nu 4,500 a night. Private bathroom, Wi-Fi and buffet breakfast in every room.',
   path: '/rooms/',
 });
 
@@ -19,7 +19,7 @@ export default function RoomsPage() {
       <PageHead
         title="Rooms & rates"
         crumbs={[{ href: '/rooms/', label: 'Rooms' }]}
-        lede="Two categories, each priced for one guest or two. Every room has a private balcony, its own bathroom and buffet breakfast."
+        lede="Two categories, each priced for one guest or two. Every room has its own bathroom and buffet breakfast."
       />
       <section className="section--tight" style={{ paddingTop: 0 }}>
         <div className="wrap">

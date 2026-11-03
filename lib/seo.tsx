@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { facilities, hotel, nu, rooms, type Room } from '@/content/site';
 
 export const homeDescription =
-  'A 3-star boutique hotel on Clock Tower Square in central Thimphu, Bhutan, since 2015. 28 rooms with private balconies, many overlooking the square.';
+  'A 3-star boutique hotel right in the centre of Thimphu, Bhutan, next to the Thimphu Clock Tower. 28 rooms overlooking Clock Tower Square, since 2015.';
 
 const abs = (path: string) => `${hotel.siteUrl}${path}`;
 
@@ -50,7 +50,7 @@ const roomLd = (r: Room) => ({
   description: r.description,
   url: abs(`/rooms/${r.slug}/`),
   image: abs(`/og/${r.slug}.jpg`),
-  amenityFeature: ['Private balcony', 'Private bathroom', 'Air conditioning', 'Free Wi-Fi'].map((name) => ({ '@type': 'LocationFeatureSpecification', name, value: true })),
+  amenityFeature: ['Private bathroom', 'Air conditioning', 'Free Wi-Fi'].map((name) => ({ '@type': 'LocationFeatureSpecification', name, value: true })),
 });
 
 export const roomOfferLd = (r: Room) => ({

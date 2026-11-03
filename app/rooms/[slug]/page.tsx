@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!r) return {};
   return pageMeta({
     title: `${r.name}, ${nu(r.price)} a night`,
-    description: `${r.name} at Thimphu Tower Hotel on Clock Tower Square, Thimphu: ${nu(r.price)} a night. Private balcony, own bathroom, Wi-Fi and buffet breakfast.`,
+    description: `${r.name} at Thimphu Tower Hotel on Clock Tower Square, Thimphu: ${nu(r.price)} a night. Own bathroom, air conditioning, Wi-Fi and buffet breakfast.`,
     path: `/rooms/${r.slug}/`,
     image: `/og/${r.slug}.jpg`,
     imageAlt: `${r.name} at Thimphu Tower Hotel`,

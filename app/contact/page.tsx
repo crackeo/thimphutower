@@ -15,7 +15,7 @@ export const metadata: Metadata = pageMeta({
 export default function ContactPage() {
   return (
     <>
-      <PageHead title="Get in touch" crumbs={[{ href: '/contact/', label: 'Contact' }]} lede="Fill in the form and we’ll get back to you as soon as possible. Need a quicker answer? Call us." />
+      <PageHead title="Get in touch" crumbs={[{ href: '/contact/', label: 'Contact' }]} lede={`${hotel.location} Fill in the form and we’ll get back to you as soon as possible. Need a quicker answer? Call us.`} />
       <section style={{ paddingBottom: 'var(--section)' }}>
         <div className="wrap contact">
           <div style={{ display: 'grid', gap: 'var(--s-6)' }}>

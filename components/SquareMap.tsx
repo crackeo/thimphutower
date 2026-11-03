@@ -9,7 +9,7 @@ const POINTS = [
   { id: 'superstar', label: 'Druk Super Star', img: 'druk-superstar', x: 58, y: 72, text: 'Crowds gathered on the square for Druk Super Star.' },
   { id: 'film', label: 'National Film Awards', img: 'film-awards-square', x: 72, y: 56, text: 'The National Film Awards stage, set up on Clock Tower Square.' },
   { id: 'snow', label: 'First snow', img: 'snow-square', x: 50, y: 36, text: 'The square under its first snow, photographed from the hotel.' },
-  { id: 'breakfast', label: 'Breakfast view', img: 'breakfast-view', x: 36, y: 24, text: 'Breakfast on the balcony with the whole square below.' },
+  { id: 'breakfast', label: 'Breakfast view', img: 'breakfast-view', x: 36, y: 24, text: 'Breakfast by the window with the whole square below.' },
 ];
 
 export function SquareMap() {

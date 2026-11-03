@@ -34,7 +34,7 @@ It is the hotel on Clock Tower Square: the rooms and the dining room look straig
 ## Capabilities and Constraints
 
 - Room types and nightly rates: Deluxe Single Nu 4,500, Deluxe Double Nu 5,000, Premium Single Nu 5,500, Premium Double Nu 6,000.
-- In-room amenities stated: AC, geyser, TV, Wi-Fi, fridge, telephone, work desk with chair, sofa, large wardrobe, private balcony, buffet breakfast included.
+- In-room amenities stated: AC, geyser, TV, Wi-Fi, fridge, telephone, work desk with chair, sofa, large wardrobe, buffet breakfast included.
 - Facilities stated (home page list): free Wi-Fi, free breakfast, baggage storage, dry cleaning, bar/lounge, breakfast buffet, fitness gym, airport transportation, concierge, laundry, restaurant, car hire, ironing, air conditioning, room service, in-room safe, flatscreen TV, family rooms, non-smoking rooms.
 - Undecided: room occupancy limits (the source figures look like template placeholders), room sizes, the 360° tour (the source says "Coming soon"), and a form backend.
 

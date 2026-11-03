@@ -7,6 +7,7 @@ export const hotel = {
   since: 2015,
   rooms: 28,
   stars: 3,
+  location: 'Right in the centre of Thimphu, next to the Thimphu Clock Tower.',
   summary:
     'Located in the heart of the city, we have 28 rooms overlooking the Clock Tower Square and the Changlimithang stadium.',
   welcome:
@@ -51,7 +52,7 @@ export const rooms: Room[] = [
     image: 'room-deluxe-single',
     gallery: ['room-deluxe-single', 'room-double-red', 'room-twin-light'],
     description:
-      'Our Deluxe room at single rate. A private balcony, a bedroom with its own bathroom, and buffet breakfast to start the day before you head out into the city.',
+      'Our Deluxe room at single rate. A bedroom with its own bathroom, and buffet breakfast to start the day before you head out into the city.',
     oldUrl: '/del_single.php',
   },
   {
@@ -63,7 +64,7 @@ export const rooms: Room[] = [
     image: 'room-deluxe-double',
     gallery: ['room-deluxe-double', 'room-twin-gold', 'room-twin-timber'],
     description:
-      'The Deluxe room at double rate, for couples, friends and families. The same private balcony and bathroom, with space to share.',
+      'The Deluxe room at double rate, for couples, friends and families. The same private bathroom and comforts, with space to share.',
     oldUrl: '/del_double.php',
   },
   {
@@ -75,7 +76,7 @@ export const rooms: Room[] = [
     image: 'room-premium-single',
     gallery: ['room-premium-single', 'room-twin-view', 'room-twin-light'],
     description:
-      'Our Premium room at single rate. A private balcony, a bedroom with its own bathroom, a work desk with chair, a sofa and a large wardrobe.',
+      'Our Premium room at single rate. A bedroom with its own bathroom, a work desk with chair, a sofa and a large wardrobe.',
     oldUrl: '/pre_single.php',
   },
   {
@@ -87,14 +88,13 @@ export const rooms: Room[] = [
     image: 'room-premium-double',
     gallery: ['room-premium-double', 'room-bay-view', 'room-twin-view'],
     description:
-      'The Premium room at double rate, for couples and families who want the most room. A private balcony, its own bathroom and generous windows onto Thimphu.',
+      'The Premium room at double rate, for couples and families who want the most room. Its own bathroom and generous windows onto Thimphu.',
     oldUrl: '/pre_double.php',
   },
 ];
 
 /** In-room features stated on every room listing of the original site. */
 export const inRoom = [
-  'Private balcony',
   'Private bathroom with geyser',
   'Air conditioning',
   'TV',
