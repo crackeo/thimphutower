@@ -110,6 +110,19 @@ export const inRoom = [
   'Buffet breakfast',
 ];
 
+/** Notes for the 3D room interior. Every item is one the hotel lists for its rooms. */
+export const roomFeatures = {
+  windows: { title: 'Windows onto the square', text: 'Carved timber windows, as on the facade. The view in the model is a photograph taken from the hotel during a festival on Clock Tower Square.' },
+  bed: { title: 'The bed', text: 'A double bed or twin beds, depending on the room. Tell us which you prefer when you enquire.' },
+  phone: { title: 'Telephone', text: 'Reach the 24-hour front desk from your bedside.' },
+  ac: { title: 'Air conditioning', text: 'Every room has its own air conditioning.' },
+  sofa: { title: 'Sofa', text: 'A sofa to sit back on after a day in the city.' },
+  desk: { title: 'Work desk with chair', text: 'Room to work, with free Wi-Fi.' },
+  tv: { title: 'TV, fridge and coffee maker', text: 'A TV, a fridge and a coffee maker in every room.' },
+  wardrobe: { title: 'Large wardrobe', text: 'Space for a long trip, with a locker for valuables.' },
+  bathroom: { title: 'Private bathroom', text: 'Your own bathroom, with a geyser for hot water and toiletries provided.' },
+};
+
 export const roomServices = [
   'Welcome drinks',
   'Room service',

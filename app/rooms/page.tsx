@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Room3D } from '@/components/architecture/Room3D';
 import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { Img } from '@/components/Img';
@@ -39,6 +40,18 @@ export default function RoomsPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+      <section className="section night" id="inside" aria-labelledby="inside-title" style={{ scrollMarginTop: '80px' }}>
+        <div className="wrap">
+          <div className="head">
+            <h2 id="inside-title" className="reveal">Step inside a room</h2>
+            <p className="lede reveal">
+              Walk around a room in 3D, with the square outside the window. Switch between a double bed and twin beds, and
+              between day and lamplight.
+            </p>
+          </div>
+          <Room3D beds="double" name="guest room" switchable />
         </div>
       </section>
       <section className="section alt" aria-labelledby="plan-title">

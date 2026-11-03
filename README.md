@@ -17,8 +17,8 @@ npm run build && npx serve@14 out   # the real static output
 | Route | Content |
 |---|---|
 | `/` | Hero with 4 real views of the square and an enquiry bar; intro; room explorer and stay calculator; 3D "Explore the tower"; interactive square map; dining; experiences; guest quotes; photo mosaic; contact |
-| `/rooms/` | 4 room cards (with photo morph into each room page), room explorer, in-room features, hotel facilities |
-| `/rooms/[slug]/` | Photo gallery with thumbnails, rate, enquiry, features, illustrative plan, other rooms |
+| `/rooms/` | 4 room cards (with photo morph into each room page), 3D room interior (double or twin), room explorer, in-room features, hotel facilities |
+| `/rooms/[slug]/` | Photo gallery with thumbnails, rate, enquiry, "Step inside" 3D interior, features, other rooms |
 | `/the-building/` | Facade, the 3D tower stage, elevation, section and site plates, interiors |
 | `/experiences/` | The 4 experiences, plus the square map |
 | `/gallery/` | 46 photos, filter chips, full-screen viewer (arrows, swipe, filmstrip) |
@@ -131,6 +131,11 @@ The full system is in `DESIGN.md`.
 - **The direction was chosen by you** ("Quiet luxury, cinematic") and is treated as binding. `impeccable` craft rules applied: no eyebrow labels, one primary action, real states, and themed focus and selection.
 - **Split hero instead of a full-bleed one.** The best photos are 960–1536px wide, so a full-width hero would look soft on large screens. A 56%-wide photo panel keeps them sharp.
 - **Hero scenes use the hotel's own photos** of, or from, the square (festival, breakfast, dusk, snow), instead of an invented "day/night" effect.
+- **3D room interior** (`components/architecture/RoomScene.tsx`):
+  - Contents: built only from the features the hotel lists (bed, telephone, air conditioning, sofa, desk and chair, TV, fridge and coffee maker, wardrobe with locker, and a bathroom with geyser), plus carved timber windows like the facade's. No balcony.
+  - Views: the window shows a real photo taken from the hotel. Day and Evening lighting, three camera views, gold hotspots, and walls that cut away as you turn the room.
+  - Labelling: marked as illustrative. Layout, finishes, colours and the painted cornice are not a survey of a real room.
+  - Fallback: the 2D plan, when WebGL is unavailable or reduced motion is set.
 - **3D floor panel stays honest.** Which room types are on which floor is unknown, so each floor shows what the facade drawing supports (window type, outlook) and links to all four rooms with "mention it when you enquire".
 - **Stay calculator.** The estimate applies 10% BST and 10% service charge to the room rate, from the hotel's rate card, and is labelled an estimate.
 - **Skills used:**

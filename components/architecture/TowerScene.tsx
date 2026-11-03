@@ -3,7 +3,11 @@
 // Elevation.tsx (1 unit = 100 SVG px). Illustrative, not a survey of the building.
 import { useEffect, useRef, useState } from 'react';
 import {
+  ACESFilmicToneMapping,
   BoxGeometry,
+  Color,
+  PCFSoftShadowMap,
+  PMREMGenerator,
   BufferGeometry,
   ConeGeometry,
   CylinderGeometry,
@@ -24,6 +28,7 @@ import {
   WebGLRenderer,
 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { nu, rooms } from '@/content/site';
 import { TLink } from '../Motion';
 
@@ -104,23 +109,42 @@ export default function TowerScene() {
     const el = wrap.current!;
     const renderer = new WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.toneMapping = ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.1;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = PCFSoftShadowMap;
     const canvas = renderer.domElement;
     canvas.setAttribute('role', 'img');
     canvas.setAttribute('aria-label', 'Interactive 3D model of Thimphu Tower Hotel and the Clock Tower. Drag to turn, pinch or scroll to zoom, click a floor to inspect it.');
     el.prepend(canvas);
 
     const scene = new Scene();
+    const pmrem = new PMREMGenerator(renderer);
+    const env = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    scene.environment = env;
+    scene.environmentIntensity = 0.45;
     const camera = new PerspectiveCamera(32, 1, 0.1, 100);
-    scene.add(new HemisphereLight('#fff3e0', '#3a332c', 1.4));
-    const sun = new DirectionalLight('#ffe9c7', 2.1);
-    sun.position.set(-6, 10, 8);
-    scene.add(sun);
+    scene.add(new HemisphereLight('#fff3e0', '#3a332c', 0.9));
+    // late-afternoon sun from the west, casting soft shadows across the square
+    const sun = new DirectionalLight('#ffe2b8', 2.6);
+    sun.position.set(-7, 9, 7);
+    sun.target.position.set(0.6, 1.5, 2);
+    sun.castShadow = true;
+    sun.shadow.mapSize.set(2048, 2048);
+    Object.assign(sun.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9, near: 1, far: 30 });
+    sun.shadow.bias = -0.0005;
+    sun.shadow.normalBias = 0.02;
+    sun.shadow.radius = 3;
+    scene.add(sun, sun.target);
 
     const solidMats = {} as Record<Role, MeshStandardMaterial>;
     const lineMats = {} as Record<Role, MeshBasicMaterial>;
     (Object.keys(SOLID) as Role[]).forEach((r) => {
       const po = { polygonOffset: true, polygonOffsetFactor: 1, polygonOffsetUnits: 1 };
       solidMats[r] = new MeshStandardMaterial({ color: SOLID[r], roughness: 0.8, ...po });
+      if (r === 'glass') Object.assign(solidMats[r], { roughness: 0.12, metalness: 0.7, emissive: new Color('#4a3218'), emissiveIntensity: 0.35 });
+      if (r === 'water') Object.assign(solidMats[r], { roughness: 0.08, metalness: 0.5 });
+      if (r === 'gold') Object.assign(solidMats[r], { roughness: 0.35, metalness: 0.85 });
       lineMats[r] = new MeshBasicMaterial({ color: LINES[r], ...po });
     });
     const line = new LineBasicMaterial({ color: '#e9e3d9', transparent: true, opacity: 0.12 });
@@ -131,6 +155,8 @@ export default function TowerScene() {
     const add = (parent: Group, geom: BufferGeometry, role: Role, x: number, y: number, z: number, edges = true) => {
       const m = new Mesh(geom, solidMats[role]);
       m.position.set(x, y, z);
+      m.castShadow = role !== 'ground' && role !== 'water';
+      m.receiveShadow = true;
       m.userData.part = currentPart;
       if (edges) {
         const e = new EdgesGeometry(geom, 25);
@@ -359,6 +385,8 @@ export default function TowerScene() {
       controls.dispose();
       geoms.forEach((g) => g.dispose());
       [...Object.values(solidMats), ...Object.values(lineMats), line].forEach((m) => m.dispose());
+      env.dispose();
+      pmrem.dispose();
       renderer.dispose();
       canvas.remove();
       api.current = null;
@@ -434,6 +462,7 @@ export default function TowerScene() {
                     ))}
                   </ul>
                   <p className="muted small">Hoping for a particular floor? Mention it when you enquire.</p>
+                  <TLink className="link" href="/rooms/#inside">Step inside a room in 3D →</TLink>
                 </>
               )}
             </>

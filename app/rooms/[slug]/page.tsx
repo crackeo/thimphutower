@@ -5,7 +5,7 @@ import { Img } from '@/components/Img';
 import { TLink } from '@/components/Motion';
 import { RoomGallery } from '@/components/RoomGallery';
 import { EnquireButton } from '@/components/EnquireButton';
-import { RoomPlan } from '@/components/architecture/RoomPlan';
+import { Room3D } from '@/components/architecture/Room3D';
 import { IconArrow, IconCheck } from '@/components/Icons';
 import { hotel, inRoom, nu, rooms } from '@/content/site';
 import { JsonLd, pageMeta, roomOfferLd } from '@/lib/seo';
@@ -57,16 +57,22 @@ export default async function RoomPage({ params }: { params: Promise<{ slug: str
           </aside>
         </div>
       </section>
-      <section className="section alt" aria-labelledby="feat-title">
-        <div className="wrap split" style={{ alignItems: 'start' }}>
-          <div className="reveal">
-            <h2 id="feat-title" style={{ marginBottom: 'var(--s-5)' }}>What’s in the room</h2>
-            <ul className="ticks">{inRoom.map((x) => <li key={x}><IconCheck /> {x}</li>)}</ul>
+      <section className="section night" aria-labelledby="inside-title">
+        <div className="wrap">
+          <div className="head">
+            <h2 id="inside-title" className="reveal">Step inside</h2>
+            <p className="lede reveal">
+              Look around a {r.category} room in 3D, by day or by lamplight, with the square outside the window. Choose any
+              feature to see where it is.
+            </p>
           </div>
-          <figure className="plan reveal" style={{ margin: 0 }}>
-            <RoomPlan name={r.name} beds={r.occupancy === 'Double' ? 'twin' : 'double'} />
-            <figcaption>Illustrative layout, not to scale</figcaption>
-          </figure>
+          <Room3D beds={r.occupancy === 'Double' ? 'twin' : 'double'} name={r.name} />
+        </div>
+      </section>
+      <section className="section alt" aria-labelledby="feat-title">
+        <div className="wrap">
+          <h2 id="feat-title" className="reveal" style={{ marginBottom: 'var(--s-5)' }}>What’s in the room</h2>
+          <ul className="ticks ticks--wide reveal">{inRoom.map((x) => <li key={x}><IconCheck /> {x}</li>)}</ul>
         </div>
       </section>
       <section className="section" aria-labelledby="other-title">

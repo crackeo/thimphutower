@@ -38,7 +38,8 @@ Photography leads. The interface is warm stone and charcoal with a lot of air, a
 | 5-step enquiry drawer, loaded on first use | `components/EnquiryDrawer*.tsx` |
 | Room explorer: category/rate toggles, nights stepper, live total with BST and service charge, clickable rate card | `components/RoomExplorer.tsx` |
 | 3D tower stage: views, lift floors, line/solid, click-to-select parts with a detail panel | `components/architecture/TowerScene.tsx` |
-| Interactive plan of Clock Tower Square, with pins tied to the hotel's own photos | `components/SquareMap.tsx` |
+| 3D room interior: day and evening lighting, camera views, feature hotspots, cut-away walls | `components/architecture/RoomScene.tsx` |
+| Illustrated plan of Clock Tower Square, with a view cone from the hotel and pins tied to the hotel's own photos | `components/SquareMap.tsx` |
 | Gallery: filter chips, full-screen viewer, swipe, filmstrip | `components/Gallery.tsx` |
 
 ## Rules
