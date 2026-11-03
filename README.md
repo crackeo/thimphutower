@@ -76,6 +76,22 @@ Every enquiry goes through one function, `sendEnquiry()` in `lib/enquiry.ts`. To
 
 To use Netlify Forms or Formspree, replace the body of that function with a `fetch()` POST and return `{ ok }`. The hero enquiry bar is a plain GET form to `/contact/`, so it works without JavaScript and pre-fills the full form.
 
+## SEO
+
+All page metadata goes through `pageMeta()` in `lib/seo.tsx`, so every page has a keyword title, a description of 160 characters or fewer, a canonical, `og:url` and a share image.
+
+- **Structured data:**
+  - Every page has `Hotel` (address, map coordinates, amenities, rooms, price range, check-in and check-out).
+  - The home page adds `WebSite`.
+  - Inner pages add `BreadcrumbList`, generated from the page breadcrumbs.
+  - Room pages add an `Offer` in BTN.
+- **Room share images:** `npm run images` writes 1200×630 JPEGs to `public/og/`.
+- **Sitemap and 404:** the sitemap carries `lastmod`, and the 404 page has its own title and is `noindex`.
+- **Off-site steps (need the hotel's accounts):**
+  - Verify the domain in Google Search Console and submit `/sitemap.xml`.
+  - Claim the Google Business Profile, and make its name, address and phone match the site exactly.
+  - Ask guests for Google and Tripadvisor reviews. Reviews aren't marked up on the site, because self-published review markup is ignored by Google and they must not be invented.
+
 ## Redirects
 
 `public/_redirects` (Netlify/Cloudflare Pages format, copied into `out/`) maps every old `.php` URL to its new route: `index`, `rooms`, the 4 room pages, `activite`, `about_us`, `gallery`, `gallary`, `contact` and `downloads`, plus `signin`/`signup` to the home page, and both old PDF paths. Other hosts need the same rules in their own format.

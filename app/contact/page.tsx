@@ -1,15 +1,16 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { EnquiryForm } from '@/components/EnquiryForm';
 import { SitePlan } from '@/components/architecture/SitePlan';
 import { IconPin } from '@/components/Icons';
 import { hotel } from '@/content/site';
 
-export const metadata: Metadata = {
-  title: 'Contact & enquiries',
-  description: `Enquire about a room at Thimphu Tower Hotel, Clock Tower Square, Thimphu. Call ${hotel.phone.display} or email ${hotel.email}.`,
-  alternates: { canonical: '/contact/' },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'Contact & room enquiries',
+  description: `Enquire about a room at Thimphu Tower Hotel on Clock Tower Square, Thimphu, Bhutan. Call ${hotel.phone.display}, WhatsApp or email ${hotel.email}.`,
+  path: '/contact/',
+});
 
 export default function ContactPage() {
   return (

@@ -7,13 +7,15 @@ import { SquareMap } from '@/components/SquareMap';
 import { Tower3D } from '@/components/architecture/Tower3D';
 import { EnquireButton } from '@/components/EnquireButton';
 import { IconArrow } from '@/components/Icons';
+import { JsonLd, homeDescription, pageMeta, websiteLd } from '@/lib/seo';
 import { dining, experiences, hotel, testimonials } from '@/content/site';
 
-export const metadata: Metadata = { alternates: { canonical: '/' } };
+export const metadata: Metadata = pageMeta({ description: homeDescription, path: '/' });
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={websiteLd} />
       <Hero />
 
       <section className="section" aria-labelledby="intro-title">

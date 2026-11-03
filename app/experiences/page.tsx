@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { Img } from '@/components/Img';
 import { SquareMap } from '@/components/SquareMap';
@@ -7,11 +8,11 @@ import { IconArrow } from '@/components/Icons';
 import { StampStories } from '@/components/StampStories';
 import { experiences, stampStories } from '@/content/site';
 
-export const metadata: Metadata = {
-  title: 'Experiences',
-  description: 'Festivals, the Buddha Dordenma, the astrologers of Pangrizampa and personalised stamps: Bhutan within easy reach of Clock Tower Square.',
-  alternates: { canonical: '/experiences/' },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'Things to do near Clock Tower Square',
+  description: 'Festivals, Buddha Dordenma, the astrologers of Pangrizampa and personalised stamps: what to see and do in Thimphu, from Clock Tower Square.',
+  path: '/experiences/',
+});
 
 export default function ExperiencesPage() {
   return (

@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { Img } from '@/components/Img';
 import { about, hotel } from '@/content/site';
 
-export const metadata: Metadata = {
-  title: 'About us',
-  description: 'A vibrant 3-star boutique design hotel in the heart of Thimphu since 2015: our vision, mission and team.',
-  alternates: { canonical: '/about/' },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'About our boutique hotel in Thimphu',
+  description: 'A vibrant 3-star boutique design hotel in the heart of Thimphu, Bhutan, since 2015: our story, vision, mission and the team who run it.',
+  path: '/about/',
+});
 
 export default function AboutPage() {
   return (

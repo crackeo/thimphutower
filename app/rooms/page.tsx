@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { Img } from '@/components/Img';
 import { TLink } from '@/components/Motion';
@@ -6,11 +7,11 @@ import { RoomExplorer } from '@/components/RoomExplorer';
 import { IconCheck } from '@/components/Icons';
 import { facilities, inRoom, nu, rooms, roomServices } from '@/content/site';
 
-export const metadata: Metadata = {
-  title: 'Rooms & rates',
-  description: 'Deluxe and Premium rooms over Clock Tower Square, from Nu 4,500 a night. Private balcony, bathroom, Wi-Fi and buffet breakfast in every room.',
-  alternates: { canonical: '/rooms/' },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'Rooms & rates in central Thimphu',
+  description: 'Deluxe and Premium rooms on Clock Tower Square, Thimphu, from Nu 4,500 a night. Private balcony, bathroom, Wi-Fi and buffet breakfast in every room.',
+  path: '/rooms/',
+});
 
 export default function RoomsPage() {
   return (

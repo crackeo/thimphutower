@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import { JsonLd, breadcrumbLd } from '@/lib/seo';
 
 export function PageHead({ title, lede, crumbs = [], aside }: { title: ReactNode; lede?: ReactNode; crumbs?: { href: string; label: string }[]; aside?: ReactNode }) {
   return (
     <header className="page-head">
+      {crumbs.length > 0 && <JsonLd data={breadcrumbLd(crumbs)} />}
       <div className="wrap">
         <nav aria-label="Breadcrumb">
           <ol className="crumbs">

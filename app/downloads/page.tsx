@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { IconDownload } from '@/components/Icons';
 import { downloads } from '@/content/site';
 
-export const metadata: Metadata = {
-  title: 'Downloads',
-  description: 'Reports from the Harvard/MIT trek groups who stayed at Thimphu Tower Hotel.',
-  alternates: { canonical: '/downloads/' },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'Trek group reports',
+  description: 'Reports from the Harvard and MIT trek groups who stayed at Thimphu Tower Hotel in Thimphu, Bhutan, as PDF downloads.',
+  path: '/downloads/',
+});
 
 export default function DownloadsPage() {
   return (

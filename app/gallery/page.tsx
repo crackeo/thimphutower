@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { Gallery } from '@/components/Gallery';
 import assets from '@/content/assets.json';
 
-export const metadata: Metadata = {
-  title: 'Gallery',
-  description: 'Photographs of Thimphu Tower Hotel: the rooms, the building, dining, life on Clock Tower Square, and the team.',
-  alternates: { canonical: '/gallery/' },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'Hotel photos & Clock Tower Square',
+  description: 'Photos of Thimphu Tower Hotel in Thimphu, Bhutan: the rooms, the building, dining, the team and life on Clock Tower Square below.',
+  path: '/gallery/',
+});
 
 const keys = [...assets.filter((a) => a.file.includes('/gallery/')), ...assets.filter((a) => !a.file.includes('/gallery/'))]
   .filter((a) => a.category)

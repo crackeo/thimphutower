@@ -8,6 +8,7 @@ import { EnquireButton } from '@/components/EnquireButton';
 import { RoomPlan } from '@/components/architecture/RoomPlan';
 import { IconArrow, IconCheck } from '@/components/Icons';
 import { hotel, inRoom, nu, rooms } from '@/content/site';
+import { JsonLd, pageMeta, roomOfferLd } from '@/lib/seo';
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -18,12 +19,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const r = rooms.find((x) => x.slug === slug);
   if (!r) return {};
-  return {
-    title: `${r.name} · ${nu(r.price)} per night`,
-    description: `${r.description} On Clock Tower Square in central Thimphu.`,
-    alternates: { canonical: `/rooms/${r.slug}/` },
-    openGraph: { images: [{ url: `/images/optimized/${r.image}-1280.webp` }] },
-  };
+  return pageMeta({
+    title: `${r.name}, ${nu(r.price)} a night`,
+    description: `${r.name} at Thimphu Tower Hotel on Clock Tower Square, Thimphu: ${nu(r.price)} a night. Private balcony, own bathroom, Wi-Fi and buffet breakfast.`,
+    path: `/rooms/${r.slug}/`,
+    image: `/og/${r.slug}.jpg`,
+    imageAlt: `${r.name} at Thimphu Tower Hotel`,
+  });
 }
 
 export default async function RoomPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -33,6 +35,7 @@ export default async function RoomPage({ params }: { params: Promise<{ slug: str
   const others = rooms.filter((x) => x.slug !== r.slug);
   return (
     <>
+      <JsonLd data={roomOfferLd(r)} />
       <PageHead title={r.name} crumbs={[{ href: '/rooms/', label: 'Rooms' }, { href: `/rooms/${r.slug}/`, label: r.name }]} lede={r.description} />
       <section style={{ paddingBottom: 'var(--section)' }}>
         <div className="wrap room">

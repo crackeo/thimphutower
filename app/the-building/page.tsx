@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageMeta } from '@/lib/seo';
 import { PageHead } from '@/components/PageHead';
 import { Img } from '@/components/Img';
 import { Tower3D } from '@/components/architecture/Tower3D';
@@ -9,11 +10,11 @@ import { TLink } from '@/components/Motion';
 import { IconArrow } from '@/components/Icons';
 import { hotel } from '@/content/site';
 
-export const metadata: Metadata = {
-  title: 'The building',
-  description: 'A Bhutanese tower on Clock Tower Square: carved timber windows over a painted arcade, with views across the square to the Clock Tower. Explore it in 3D.',
-  alternates: { canonical: '/the-building/' },
-};
+export const metadata: Metadata = pageMeta({
+  title: 'The building: a Bhutanese tower in 3D',
+  description: 'A Bhutanese tower on Clock Tower Square, Thimphu: carved timber windows over a painted arcade. Explore the building in 3D and in drawings.',
+  path: '/the-building/',
+});
 
 export default function BuildingPage() {
   return (
