@@ -1,0 +1,571 @@
+<style>
+        /* CSS Variables for easy theme adjustments */
+        :root {
+            --main-downloads-primary: #E0B83A;
+            --main-downloads-secondary: #6c757d;
+            --main-downloads-accent: #28a745;
+            --main-downloads-bg-light: #f8f9fa;
+            --main-downloads-bg-white: #ffffff;
+            --main-downloads-text-dark: #343a40;
+            --main-downloads-text-light: #e9ecef;
+            --main-downloads-border: #dee2e6;
+            --main-downloads-shadow-light: rgba(0, 0, 0, 0.05);
+            --main-downloads-shadow-medium: rgba(0, 0, 0, 0.1);
+            --main-downloads-pdf-icon-color: #dc3545;
+            --main-downloads-font-family: 'Poppins', sans-serif;
+        }
+
+        .main_downloads_container {
+            max-width: 90%; /* Wider for table view */
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        .main_downloads_header_section {
+            background-color: var(--main-downloads-bg-white);
+            padding: 30px 0;
+            border-bottom: 1px solid var(--main-downloads-border);
+            box-shadow: 0 4px 12px var(--main-downloads-shadow-light);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .main_downloads_header_section h1 {
+            color: var(--main-downloads-primary);
+            font-weight: 700;
+            margin: 0;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .main_downloads_header_section p {
+            color: var(--main-downloads-secondary);
+            font-size: 1.1rem;
+            margin-top: 10px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Downloads Table */
+        .main_downloads_table_wrapper {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--main-downloads-bg-white);
+            box-shadow: 0 4px 15px var(--main-downloads-shadow-light);
+            border-radius: 10px;
+            overflow: hidden; /* Ensures rounded corners apply to content */
+        }
+
+        .main_downloads_table_wrapper th,
+        .main_downloads_table_wrapper td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--main-downloads-border);
+            vertical-align: middle; /* Align content vertically in the middle */
+        }
+
+        .main_downloads_table_wrapper thead th {
+            background-color: var(--main-downloads-primary);
+            color: var(--main-downloads-bg-white);
+            font-weight: 600;
+            font-size: 1rem;
+            position: sticky; /* Make headers sticky for long tables */
+            top: 0;
+            z-index: 10;
+        }
+
+        .main_downloads_table_wrapper tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Subtle stripe for readability */
+        }
+
+        .main_downloads_table_wrapper tbody tr:hover {
+            background-color: #e9f5ff; /* Highlight row on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px var(--main-downloads-shadow-light);
+            transition: all 0.2s ease;
+        }
+
+        .main_downloads_sl_cell {
+            font-weight: 500;
+            color: var(--main-downloads-text-dark);
+            text-align: center;
+            width: 50px; /* Fixed width for SL */
+        }
+
+        .main_downloads_datetime_cell {
+            font-size: 0.9rem;
+            color: var(--main-downloads-secondary);
+            white-space: nowrap; /* Prevent date/time from wrapping */
+            width: 150px; /* Fixed width for date/time */
+        }
+        .main_downloads_datetime_cell div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 3px;
+        }
+        .main_downloads_datetime_cell i {
+            color: var(--main-downloads-primary);
+        }
+
+        .main_downloads_document_cell {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .main_downloads_pdf_icon {
+            font-size: 2.2rem; /* Larger icon */
+            color: var(--main-downloads-pdf-icon-color);
+            flex-shrink: 0;
+        }
+        
+        .main_downloads_text_content {
+            flex-grow: 1;
+        }
+
+        .main_downloads_text_content h2 {
+            font-size: 1.15rem;
+            color: var(--main-downloads-text-dark);
+            margin: 0;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .main_downloads_short_description {
+            font-size: 0.85rem;
+            color: var(--main-downloads-secondary);
+            margin-top: 5px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* Limit to 2 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .main_downloads_action_cell {
+            text-align: center;
+            width: 150px; /* Fixed width for button column */
+        }
+
+        .main_downloads_download_btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--main-downloads-primary);
+            color: var(--main-downloads-bg-white);
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2);
+            white-space: nowrap;
+        }
+
+        .main_downloads_download_btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+        }
+
+        .main_downloads_download_btn i {
+            margin-right: 6px;
+        }
+
+        /* Footer Section */
+        .main_downloads_footer_section {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+            color: var(--main-downloads-secondary);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--main-downloads-border);
+            background-color: var(--main-downloads-bg-white);
+            box-shadow: 0 -2px 8px var(--main-downloads-shadow-light);
+        }
+
+        /* Mobile Responsiveness - Back to normal table behavior for larger screens */
+        @media (max-width: 768px) {
+            .main_downloads_container {
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+
+            .main_downloads_header_section {
+                padding: 20px 0;
+                margin-bottom: 25px;
+            }
+
+            .main_downloads_header_section h1 {
+                font-size: 2rem;
+            }
+
+            .main_downloads_header_section p {
+                font-size: 1rem;
+            }
+            
+            /* Revert table cells to block for small screens, but hide the table head */
+            .main_downloads_table_wrapper {
+                display: block; /* Important for table to respond correctly */
+            }
+
+            .main_downloads_table_wrapper thead {
+                display: none; /* Hide table headers on small screens */
+            }
+
+            .main_downloads_table_wrapper tbody,
+            .main_downloads_table_wrapper tr {
+                display: block;
+                width: 100%;
+            }
+
+            .main_downloads_table_wrapper tr {
+                margin-bottom: 15px;
+                border: 1px solid var(--main-downloads-border);
+                border-radius: 8px;
+                box-shadow: 0 2px 10px var(--main-downloads-shadow-light);
+                overflow: hidden;
+            }
+
+            .main_downloads_table_wrapper td {
+                display: flex; /* Use flexbox for cells to align label and content */
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 15px;
+                border-bottom: 1px solid var(--main-downloads-border);
+                font-size: 0.9rem;
+                text-align: right; /* Default align content right */
+            }
+            
+            .main_downloads_table_wrapper td:last-child {
+                border-bottom: none; /* No border for the last cell in a row */
+            }
+
+            /* Pseudo-element for labels */
+            .main_downloads_table_wrapper td::before {
+                content: attr(data-label);
+                font-weight: 600;
+                color: var(--main-downloads-primary);
+                flex-shrink: 0;
+                margin-right: 15px;
+                text-align: left;
+            }
+
+            /* Specific styling for cells that need different alignment or display */
+            .main_downloads_sl_cell {
+                text-align: right;
+            }
+            .main_downloads_sl_cell::before {
+                text-align: left;
+            }
+
+            .main_downloads_datetime_cell {
+                flex-direction: column; /* Stack date and time vertically */
+                align-items: flex-end; /* Align to the right */
+                gap: 5px;
+            }
+            .main_downloads_datetime_cell div {
+                justify-content: flex-end; /* Align icons with text on the right */
+                margin-bottom: 0; /* Remove extra margin */
+            }
+            .main_downloads_datetime_cell::before {
+                align-self: flex-start; /* Keep label at the top-left */
+            }
+
+
+            .main_downloads_document_cell {
+                flex-direction: column; /* Stack icon, title, description */
+                align-items: flex-end; /* Align text to the right */
+                gap: 5px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            .main_downloads_document_cell::before {
+                align-self: flex-start; /* Keep label at the top-left */
+            }
+            .main_downloads_pdf_icon {
+                font-size: 2rem;
+                margin-bottom: 5px; /* Space below icon */
+                align-self: center; /* Center the icon */
+            }
+            .main_downloads_text_content {
+                text-align: right; /* Align title and description right */
+                width: 100%;
+            }
+            .main_downloads_text_content h2 {
+                font-size: 1.1rem;
+            }
+            .main_downloads_short_description {
+                font-size: 0.8rem;
+                -webkit-line-clamp: 3; /* Allow more lines for description */
+            }
+
+            .main_downloads_action_cell {
+                justify-content: center; /* Center the button */
+                padding: 15px;
+            }
+            .main_downloads_action_cell::before {
+                display: none; /* Hide label for action button */
+            }
+            .main_downloads_download_btn {
+                width: 100%; /* Full width button */
+                max-width: 200px; /* Limit max width */
+            }
+
+            .main_downloads_footer_section {
+                margin-top: 40px;
+                padding: 30px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main_downloads_header_section h1 {
+                font-size: 1.7rem;
+            }
+            .main_downloads_header_section p {
+                font-size: 0.9rem;
+            }
+            .main_downloads_table_wrapper td {
+                padding-left: 10px; /* Adjust padding for smaller screens */
+                padding-right: 10px;
+                font-size: 0.85rem;
+            }
+            .main_downloads_table_wrapper td::before {
+                width: auto; /* Allow label width to adjust */
+                margin-right: 10px;
+            }
+            .main_downloads_pdf_icon {
+                font-size: 1.6rem;
+            }
+            .main_downloads_text_content h2 {
+                font-size: 1rem;
+            }
+            .main_downloads_short_description {
+                font-size: 0.75rem;
+            }
+        }
+</style>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf2c68b583.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="asset/Css/style.css">
+    <link rel="stylesheet" href="asset/Css/header.css">
+    <link rel="stylesheet" href="asset/Css/responsive.css">
+    <link rel="stylesheet" href="asset/Css/signup_in.css">
+    <link rel="stylesheet" href="asset/Css/about.css">
+    <link rel="stylesheet" href="asset/Css/activite.css">
+    <link rel="stylesheet" href="asset/Css/contact.css">
+    <link rel="stylesheet" href="asset/Css/gallery.css">
+    <link rel="stylesheet" href="asset/Css/rooms.css">
+    <link rel="stylesheet" href="asset/Css/ver_tour.css">
+    <link rel="stylesheet" href="asset/Css/del_single.css">
+    <link rel="stylesheet" href="asset/Css/book_now.css">
+
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>Thimphu Tower Hotel</title>
+</head>
+<body>
+    <header>
+        <div class="navbar_one">
+            <div class="address ">
+                <p><i class="fa-solid fa-envelope"></i> thimphutowers@gmail.com</p>
+				<p><i class="fa-solid fa-phone-volume"></i>+975 2 335 367 </p>
+            </div>
+            <div class="slogan desk_slogaon">
+
+            </div>
+            <div class="my_account">
+                <span class="my_account_top">
+                    <p class="top1" onclick="showlogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-down"></i></p>
+                    <p class="top2" onclick="hidelogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-up"></i></p>                    
+                </span>
+                <span>
+                    <ul class="login_bar">
+                        <a href="signin.php"><li><i class="fa-solid fa-right-to-bracket"></i>Login</li></a>
+                        <a href="signup.php"><li><i class="fa-solid fa-clipboard-user" style="padding: 0px 10px 0px 14px;"></i>Register</li></a>
+                    </ul>
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-----Main Navigation Bar--->
+        <div class="main_navbar">
+            <div class="header_logo">
+                <a href="#"><img src="image/logo.png" alt=""></a>
+                <a href="#"></a><h1>Thimphu Tower</h1></a>
+                
+            </div>
+            <div class="toggole">
+				<i class="fa-solid fa-bars" onclick="showbarToggole()"></i>
+				<i class="fa-solid fa-xmark" onclick="hidebarToggole()" id="Xbar"></i>				
+			</div>
+            <div class="navbar">
+                <ul class="main_manu">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="rooms.php">Rooms</li>
+                    <li><a href="activite.php">Activities</li>                 
+                    <li><a href="about_us.php">About us</li>
+                    <li><a href="downloads.php">Downloads</a>
+                    <li><a href="gallery.php">Gallery</li>
+                    <li><a href="contact.php">Contact</a>
+
+                        <!-- <ul class="Dropdown">
+                            <a href="#"><li>Our Approch</li></a>
+                            <a href="#"><li>How we Work</li></a>
+                        </ul>  -->
+                    </li>
+                    <a href="360tour.php" style="display: none;"><button class="nav_btn">Virtual Tour <i class="fa-solid fa-street-view"></i> </button></a>
+
+
+                </ul>
+                
+            </div>
+            
+        </div>
+    </header>
+<script src="asset/java/main_script"></script>
+
+</body>
+</html>    <!-- Header Section with background image and overlay -->
+    <section class="rooms_page_header">
+        <h1>Downloads </h1>
+        <!-- <p>Choose from a variety of sizes and styles.</p> -->
+    </section>
+    <!-- Main Header Section -->
+    <!-- Main Downloads Content Table -->
+    <div class="main_downloads_container">
+        <table class="main_downloads_table_wrapper">
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Date & Time</th>
+                    <th>Document Details</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                                    <tr>
+                        <td data-label="SL" class="main_downloads_sl_cell">1</td>
+                        <td data-label="Date & Time" class="main_downloads_datetime_cell">
+                            <div><i class="far fa-calendar-alt"></i> February 04, 2026</div>
+                            <div><i class="far fa-clock"></i> 10:30 AM</div>
+                        </td>
+                        <td data-label="Document Details" class="main_downloads_document_cell">
+                            <!-- <i class="fas fa-file-pdf main_downloads_pdf_icon"></i> -->
+                            <div class="main_downloads_text_content">
+                                <h2>Reports on Harvard Group 1 </h2>
+                                <p class="main_downloads_short_description">This report presents the key findings, analysis, and outcomes developed through the collaborative efforts of Harvard Group 1.</p>
+                            </div>
+                        </td>
+                        <td data-label="Action" class="main_downloads_action_cell">
+                            <a href="image/reports/Harvard_MIT_Trek_Group_2_Report_2026.pdf" target="_blank" class="main_downloads_download_btn">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td data-label="SL" class="main_downloads_sl_cell">2</td>
+                        <td data-label="Date & Time" class="main_downloads_datetime_cell">
+                            <div><i class="far fa-calendar-alt"></i> February 04, 2026</div>
+                            <div><i class="far fa-clock"></i> 02:15 PM</div>
+                        </td>
+                        <td data-label="Document Details" class="main_downloads_document_cell">
+                            <!-- <i class="fas fa-file-pdf main_downloads_pdf_icon"></i> -->
+                            <div class="main_downloads_text_content">
+                                <h2>Reports on Harvard Group 2</h2>
+                                <p class="main_downloads_short_description">This report presents the key findings, analysis, and outcomes developed through the collaborative efforts of Harvard Group 2.</p>
+                            </div>
+                        </td>
+                        <td data-label="Action" class="main_downloads_action_cell">
+                            <a href="image/reports/Harvard_MIT_GROUP_1_Report_2025.pdf" target="_blank" class="main_downloads_download_btn">
+                                <i class="fas fa-eye"></i> View PDF
+                            </a>
+                        </td>
+                    </tr>
+                            </tbody>
+        </table>
+    </div>
+
+    <footer>
+    <div class="footer_class">
+        <div class="about_us footer_div">
+            <h1>About Thimpu Tower Hotel</h1>
+            <p>Located in the heart of the city, we have 28 rooms overlooking the Clock tower square and the Changlimithang stadium. <a href="#">Read More</a></p>
+
+            <div class="social_icon">
+                <a href="https://www.facebook.com/profile.php?id=100063471611976&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+
+        </div>
+        <div class="quick_link footer_div">
+            <h1>Quick Link</h1>
+            <ul>
+                <li><a href="index.php"><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                <li><a href="rooms.php"><i class="fa-solid fa-angle-right"></i>Room</a></li>
+                <li><a href="activite.php"><i class="fa-solid fa-angle-right"></i>Activities</a></li>
+                <li><a href="about_us.php"><i class="fa-solid fa-angle-right"></i>About us</a></li>
+                <li><a href="contact.php"><i class="fa-solid fa-angle-right"></i>Contact</a></li>
+                <li><a href="gallary.php"><i class="fa-solid fa-angle-right"></i>Gallary</a></li>
+
+            </ul>
+            
+        </div>
+        <div class="Address footer_div">
+            <h1>Address</h1>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-house-chimney"></i></p>
+                <p>Clock Tower Square <br>Thimpu, Bhutan, 00975</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-tty"></i></p>
+                <p>+975 2 335 367</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-envelope-circle-check"></i></p>
+                <p>thimphutowers@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="subscribe footer_div">
+            <h1>Newsletter</h1>
+            <p>If you have any questions or need help contact with our team.</p>
+            <div class="input">
+                <input type="text" placeholder="Enter your Email">
+                <button>Subscribe Now</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="power_footer">@2024 Developed & maintained by <a href="https://l2nsoft.com/" target="_blank">L2N Private Limited</a>, Powered by Paperles</div>
+</footer>
+
+
+
+
+<script src="asset/java/myscript.js"></script>
+<script src="asset/java/sliderscript.js"></script>
+<script src="asset/java/counterscript.js"></script>
+
+

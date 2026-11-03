@@ -1,0 +1,359 @@
+{
+ "facade-square": {
+  "width": 523,
+  "height": 534,
+  "alt": "Thimphu Tower Hotel and the Clock Tower reflected in the pool on Clock Tower Square",
+  "category": "building",
+  "caption": null
+ },
+ "room-deluxe-single": {
+  "width": 1200,
+  "height": 900,
+  "alt": "Deluxe Single Room with a double bed, orange bench and window chairs",
+  "category": "rooms",
+  "caption": null
+ },
+ "room-deluxe-double": {
+  "width": 1200,
+  "height": 797,
+  "alt": "Deluxe Double Room with two beds and blue-striped runners",
+  "category": "rooms",
+  "caption": null
+ },
+ "room-premium-single": {
+  "width": 1024,
+  "height": 768,
+  "alt": "Premium Single Room with twin beds beneath a timber headboard",
+  "category": "rooms",
+  "caption": null
+ },
+ "room-premium-double": {
+  "width": 1200,
+  "height": 800,
+  "alt": "Premium Double Room with a large bed facing traditional Bhutanese windows",
+  "category": "rooms",
+  "caption": null
+ },
+ "room-bay-view": {
+  "width": 1200,
+  "height": 800,
+  "alt": "Corner room with a timber ceiling and a wall of windows over Thimphu",
+  "category": "rooms",
+  "caption": "Corner room at Thimphu Tower"
+ },
+ "room-twin-view": {
+  "width": 1200,
+  "height": 800,
+  "alt": "Premium room with a desk by full-height windows over the city",
+  "category": "rooms",
+  "caption": "The Premium category"
+ },
+ "room-twin-timber": {
+  "width": 1200,
+  "height": 900,
+  "alt": "Twin room under a pitched timber ceiling",
+  "category": "rooms",
+  "caption": null
+ },
+ "room-twin-light": {
+  "width": 1200,
+  "height": 900,
+  "alt": "Bright twin room with sheer curtains and a writing desk",
+  "category": "rooms",
+  "caption": null
+ },
+ "room-twin-gold": {
+  "width": 1200,
+  "height": 798,
+  "alt": "Twin room with gold bed runners and reading lamps",
+  "category": "rooms",
+  "caption": null
+ },
+ "room-double-red": {
+  "width": 1200,
+  "height": 900,
+  "alt": "Double room with a red runner, bench and window seating",
+  "category": "rooms",
+  "caption": null
+ },
+ "activity-buddha": {
+  "width": 500,
+  "height": 664,
+  "alt": "The golden Buddha Dordenma statue above Thimphu",
+  "category": null,
+  "caption": null
+ },
+ "activity-astrology": {
+  "width": 500,
+  "height": 664,
+  "alt": "Monks in the courtyard of a traditional Bhutanese building",
+  "category": null,
+  "caption": null
+ },
+ "activity-festival": {
+  "width": 500,
+  "height": 664,
+  "alt": "A masked dancer in a red and gold costume at a tshechu festival",
+  "category": null,
+  "caption": null
+ },
+ "activity-stamps": {
+  "width": 500,
+  "height": 664,
+  "alt": "Travellers posing together in the Himalayan snow",
+  "category": null,
+  "caption": null
+ },
+ "logo": {
+  "width": 579,
+  "height": 579,
+  "alt": "Thimphu Tower Hotel",
+  "category": null,
+  "caption": null
+ },
+ "dining-long-table": {
+  "width": 1536,
+  "height": 2048,
+  "alt": "The restaurant laid with a long banquet table",
+  "category": "dining",
+  "caption": "All set for our Romanian guests"
+ },
+ "festival-from-window": {
+  "width": 1536,
+  "height": 2048,
+  "alt": "A festival crowd on Clock Tower Square seen through a carved hotel window",
+  "category": "square",
+  "caption": null
+ },
+ "dining-square-view": {
+  "width": 960,
+  "height": 640,
+  "alt": "The dining room with tables set along windows over the square",
+  "category": "dining",
+  "caption": "Our dining table"
+ },
+ "team-stairs": {
+  "width": 1024,
+  "height": 768,
+  "alt": "Team Thimphu Tower in uniform on the front steps",
+  "category": "people",
+  "caption": null
+ },
+ "team-entrance": {
+  "width": 1600,
+  "height": 1200,
+  "alt": "Team Thimphu Tower gathered at the entrance",
+  "category": "people",
+  "caption": null
+ },
+ "cyclists-square": {
+  "width": 1536,
+  "height": 2048,
+  "alt": "Cyclists resting on Clock Tower Square in front of the hotel",
+  "category": "square",
+  "caption": null
+ },
+ "team-with-guest": {
+  "width": 1284,
+  "height": 731,
+  "alt": "The hotel team celebrating together",
+  "category": "people",
+  "caption": null
+ },
+ "momo-plate": {
+  "width": 1440,
+  "height": 1440,
+  "alt": "Plates of momos and chilli dishes",
+  "category": "dining",
+  "caption": null
+ },
+ "veggie-harvest": {
+  "width": 740,
+  "height": 926,
+  "alt": "A team member holding freshly harvested cabbages",
+  "category": "people",
+  "caption": "First vegetable harvest for team Thimphu Tower"
+ },
+ "facade-dusk": {
+  "width": 668,
+  "height": 960,
+  "alt": "The hotel facade at dusk above the square",
+  "category": "building",
+  "caption": null
+ },
+ "team-group": {
+  "width": 960,
+  "height": 720,
+  "alt": "The hotel team together in national dress",
+  "category": "people",
+  "caption": null
+ },
+ "team-staircase": {
+  "width": 960,
+  "height": 720,
+  "alt": "The team assembled on the main staircase",
+  "category": "people",
+  "caption": null
+ },
+ "go-green-baskets": {
+  "width": 720,
+  "height": 960,
+  "alt": "Stacks of recycled-bottle laundry baskets",
+  "category": "people",
+  "caption": "To cut plastic, our laundry baskets come from a women’s group in Samdrupjongkhar, made from recycled water bottles."
+ },
+ "marathon-bib": {
+  "width": 960,
+  "height": 950,
+  "alt": "Race bib from the 2019 Thimphu Half Marathon",
+  "category": "people",
+  "caption": "Coronation marathon"
+ },
+ "run-to-give": {
+  "width": 960,
+  "height": 720,
+  "alt": "The team holding race numbers at a charity run",
+  "category": "people",
+  "caption": "Team Thimphu Tower, Run to Give"
+ },
+ "team-portrait": {
+  "width": 960,
+  "height": 640,
+  "alt": "Team Thimphu Tower on the staircase",
+  "category": "people",
+  "caption": null
+ },
+ "danish-guests": {
+  "width": 960,
+  "height": 720,
+  "alt": "A group of Danish guests with the hotel team",
+  "category": "people",
+  "caption": "With a fabulous group of Danish guests"
+ },
+ "harvard-trek": {
+  "width": 960,
+  "height": 452,
+  "alt": "Harvard Bhutan Trek 2019 banner hanging in the hotel",
+  "category": "people",
+  "caption": null
+ },
+ "harvest-crates": {
+  "width": 960,
+  "height": 540,
+  "alt": "Wooden crates from the team’s harvest",
+  "category": "people",
+  "caption": null
+ },
+ "team-lobby": {
+  "width": 960,
+  "height": 720,
+  "alt": "The hotel team in the lobby",
+  "category": "people",
+  "caption": null
+ },
+ "staircase": {
+  "width": 960,
+  "height": 640,
+  "alt": "The twin staircase in the lobby",
+  "category": "building",
+  "caption": null
+ },
+ "facade-low": {
+  "width": 960,
+  "height": 640,
+  "alt": "Looking up at the hotel facade and its painted cornices",
+  "category": "building",
+  "caption": null
+ },
+ "facade-front": {
+  "width": 960,
+  "height": 640,
+  "alt": "The hotel facade facing Clock Tower Square",
+  "category": "building",
+  "caption": null
+ },
+ "film-awards-square": {
+  "width": 960,
+  "height": 720,
+  "alt": "The National Film Awards stage on Clock Tower Square",
+  "category": "square",
+  "caption": null
+ },
+ "breakfast-view": {
+  "width": 750,
+  "height": 883,
+  "alt": "Breakfast laid on a balcony table above Clock Tower Square",
+  "category": "dining",
+  "caption": "Breakfast with a view of the town square"
+ },
+ "restaurant-white": {
+  "width": 960,
+  "height": 640,
+  "alt": "The restaurant laid with white tablecloths",
+  "category": "dining",
+  "caption": null
+ },
+ "grilled-fish": {
+  "width": 690,
+  "height": 960,
+  "alt": "Grilled fish served with vegetables",
+  "category": "dining",
+  "caption": "Grilled fish"
+ },
+ "ngyencha": {
+  "width": 720,
+  "height": 960,
+  "alt": "A guest trying the yangchen, a Bhutanese hammered dulcimer, beside a musician",
+  "category": "square",
+  "caption": "Guest playing the Bhutanese Ngyencha"
+ },
+ "tarayana-fair": {
+  "width": 720,
+  "height": 960,
+  "alt": "Visitors at the Tarayana Fair on the square",
+  "category": "square",
+  "caption": "Tarayana Fair"
+ },
+ "tarayana-fair-2": {
+  "width": 720,
+  "height": 960,
+  "alt": "A statue overlooking the Tarayana Fair crowds",
+  "category": "square",
+  "caption": "Tarayana Fair"
+ },
+ "druk-superstar": {
+  "width": 720,
+  "height": 960,
+  "alt": "Crowds on Clock Tower Square for Druk Super Star",
+  "category": "square",
+  "caption": "Druk Super Star"
+ },
+ "gift-shop": {
+  "width": 720,
+  "height": 960,
+  "alt": "Painted masks and thangkas in the gift shop",
+  "category": "building",
+  "caption": "The gift shop at Thimphu Tower"
+ },
+ "gift-shop-masks": {
+  "width": 720,
+  "height": 960,
+  "alt": "Masks and statues in the gift shop display",
+  "category": "building",
+  "caption": null
+ },
+ "gift-shop-niches": {
+  "width": 720,
+  "height": 960,
+  "alt": "Lit display niches in the gift shop",
+  "category": "building",
+  "caption": null
+ },
+ "snow-square": {
+  "width": 750,
+  "height": 1334,
+  "alt": "Clock Tower Square under snow, seen from above",
+  "category": "square",
+  "caption": null
+ }
+}

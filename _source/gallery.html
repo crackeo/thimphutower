@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf2c68b583.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="asset/Css/style.css">
+    <link rel="stylesheet" href="asset/Css/header.css">
+    <link rel="stylesheet" href="asset/Css/responsive.css">
+    <link rel="stylesheet" href="asset/Css/signup_in.css">
+    <link rel="stylesheet" href="asset/Css/about.css">
+    <link rel="stylesheet" href="asset/Css/activite.css">
+    <link rel="stylesheet" href="asset/Css/contact.css">
+    <link rel="stylesheet" href="asset/Css/gallery.css">
+    <link rel="stylesheet" href="asset/Css/rooms.css">
+    <link rel="stylesheet" href="asset/Css/ver_tour.css">
+    <link rel="stylesheet" href="asset/Css/del_single.css">
+    <link rel="stylesheet" href="asset/Css/book_now.css">
+
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>Thimphu Tower Hotel</title>
+</head>
+<body>
+    <header>
+        <div class="navbar_one">
+            <div class="address ">
+                <p><i class="fa-solid fa-envelope"></i> thimphutowers@gmail.com</p>
+				<p><i class="fa-solid fa-phone-volume"></i>+975 2 335 367 </p>
+            </div>
+            <div class="slogan desk_slogaon">
+
+            </div>
+            <div class="my_account">
+                <span class="my_account_top">
+                    <p class="top1" onclick="showlogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-down"></i></p>
+                    <p class="top2" onclick="hidelogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-up"></i></p>                    
+                </span>
+                <span>
+                    <ul class="login_bar">
+                        <a href="signin.php"><li><i class="fa-solid fa-right-to-bracket"></i>Login</li></a>
+                        <a href="signup.php"><li><i class="fa-solid fa-clipboard-user" style="padding: 0px 10px 0px 14px;"></i>Register</li></a>
+                    </ul>
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-----Main Navigation Bar--->
+        <div class="main_navbar">
+            <div class="header_logo">
+                <a href="#"><img src="image/logo.png" alt=""></a>
+                <a href="#"></a><h1>Thimphu Tower</h1></a>
+                
+            </div>
+            <div class="toggole">
+				<i class="fa-solid fa-bars" onclick="showbarToggole()"></i>
+				<i class="fa-solid fa-xmark" onclick="hidebarToggole()" id="Xbar"></i>				
+			</div>
+            <div class="navbar">
+                <ul class="main_manu">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="rooms.php">Rooms</li>
+                    <li><a href="activite.php">Activities</li>                 
+                    <li><a href="about_us.php">About us</li>
+                    <li><a href="downloads.php">Downloads</a>
+                    <li><a href="gallery.php">Gallery</li>
+                    <li><a href="contact.php">Contact</a>
+
+                        <!-- <ul class="Dropdown">
+                            <a href="#"><li>Our Approch</li></a>
+                            <a href="#"><li>How we Work</li></a>
+                        </ul>  -->
+                    </li>
+                    <a href="360tour.php" style="display: none;"><button class="nav_btn">Virtual Tour <i class="fa-solid fa-street-view"></i> </button></a>
+
+
+                </ul>
+                
+            </div>
+            
+        </div>
+    </header>
+<script src="asset/java/main_script"></script>
+
+</body>
+</html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .ioh_gallery_section {
+            max-width: 95%;
+            margin: 0 auto;
+            padding: 100px 0 50px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* --- Toolbar Structure --- */
+        .ioh_gallery_toolbar {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .ioh_gallery_top_row {
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+        .ioh_gallery_heading {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .ioh_back_btn {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #9A1B28;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: none;
+            font-weight: 600;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(154, 27, 40, 0.3);
+            transition: 0.3s;
+        }
+        .ioh_back_btn:hover { background: #1a1a1a; }
+
+        .ioh_gallery_nav_row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .ioh_gallery_filter_group { display: flex; gap: 10px; }
+        .ioh_gallery_filter_btn {
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .ioh_gallery_filter_btn.active { background: #9A1B28; color: white; border-color: #9A1B28; }
+
+        .ioh_gallery_search_box { position: relative; width: 250px; }
+        .ioh_gallery_search_box input { width: 100%; padding: 10px 35px 10px 15px; border: 1px solid #ddd; border-radius: 20px; outline: none; }
+        .ioh_gallery_search_box i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: #999; }
+
+        /* --- Folder Stack Visual --- */
+        .ioh_folder_stack {
+            position: relative;
+            width: 100%;
+            max-width: 250px;
+            aspect-ratio: 1/1;
+            cursor: pointer;
+            margin: 0 auto 40px auto;
+            transition: 0.3s;
+        }
+        .ioh_stack_layer {
+            position: absolute;
+            inset: 0;
+            border-radius: 8px;
+            background: #eee;
+            border: 2px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex; align-items: center; justify-content: center;
+            background-size: cover; background-position: center;
+        }
+        .ioh_stack_layer img { width: 100%; height: 100%; object-fit: cover; }
+
+        .ioh_layer_3 { transform: translate(12px, -12px) rotate(6deg); z-index: 1; opacity: 0.4; }
+        .ioh_layer_2 { transform: translate(6px, -6px) rotate(3deg); z-index: 2; opacity: 0.7; }
+        .ioh_layer_1 { transform: translate(0,0) rotate(0deg); z-index: 3; }
+
+        .ioh_folder_stack:hover .ioh_layer_3 { transform: translate(20px, -20px) rotate(10deg); }
+        .ioh_folder_stack:hover .ioh_layer_2 { transform: translate(10px, -10px) rotate(5deg); }
+
+        .ioh_folder_title_box { margin-top: 10px; text-align: center; }
+        .ioh_folder_name { font-weight: 800; font-size: 0.9rem; color: #1a1a1a; text-transform: uppercase; }
+        .ioh_folder_count { font-size: 0.75rem; color: #888; font-weight: 600; }
+
+        /* --- Grid System --- */
+        .ioh_gallery_grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+
+        /* --- Pagination Styling --- */
+        .ioh_gallery_pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding: 20px 0;
+        }
+        .ioh_gallery_page_btn {
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .ioh_gallery_page_btn.active {
+            background: #9A1B28;
+            color: white;
+            border-color: #9A1B28;
+        }
+        .ioh_gallery_page_btn:disabled { opacity: 0.3; cursor: not-allowed; }
+        /* --- Social Platform Card Styling (When no thumb image) --- */
+        .ioh_social_card {
+            width: 100%; height: 100%;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            color: white; text-align: center;
+            transition: 0.3s;
+        }
+        .social-fb { background: #1877F2; } /* Facebook Blue */
+        .social-insta {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+        .social-tiktok { background: #000000; }
+        .social-vimeo { background: #1AB7EA; }
+
+        .ioh_social_card i { font-size: 3rem; margin-bottom: 10px; }
+        .ioh_social_card span { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Remove play icon for social cards since they have their own logo */
+        .ioh_gallery_item .social_hide_icon { display: none; }
+        /* --- Spread Animation --- */
+        @keyframes ioh_spread {
+            0% { opacity: 0; transform: scale(0.5) translateY(40px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .animate_spread { animation: ioh_spread 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+
+        /* --- Media Item Style --- */
+        .ioh_gallery_item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            cursor: pointer;
+            background: #000;
+            border-radius: 4px;
+            opacity: 0;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .ioh_gallery_item img, .ioh_gallery_item video {
+            width: 100%; height: 100%; object-fit: cover; transition: 0.5s;
+        }
+        .ioh_gallery_item:hover img, .ioh_gallery_item:hover video { transform: scale(1.1); filter: brightness(0.7); }
+
+        .ioh_gallery_card_overlay {
+            position: absolute; inset: 0;
+            display: flex; align-items: flex-end;
+            padding: 12px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            opacity: 0; transition: 0.3s;
+            pointer-events: none; z-index: 5;
+        }
+        .ioh_gallery_item:hover .ioh_gallery_card_overlay { opacity: 1; }
+        .ioh_gallery_card_title { color: white; font-size: 0.75rem; font-weight: 600; }
+
+        .ioh_gallery_video_icon {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 40px; height: 40px; background: rgba(154, 27, 40, 0.9); color: white;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            z-index: 2; pointer-events: none;
+        }
+
+        .ioh_social_badge {
+            position: absolute; top: 10px; right: 10px;
+            padding: 4px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; color: white; z-index: 4;
+            text-transform: uppercase;
+        }
+        .badge-youtube { background: #FF0000; }
+        .badge-video { background: #333; }
+
+        /* --- Lightbox Modal --- */
+        #ioh_gallery_popup {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.98); z-index: 99999;
+            display: none; flex-direction: column; justify-content: center; align-items: center;
+        }
+        #ioh_gallery_popup.show { display: flex; }
+        .ioh_gallery_popup_box { width: 90%; max-width: 1000px; height: 70vh; display: flex; justify-content: center; align-items: center; position: relative; }
+
+        .ioh_gallery_media_main { max-width: 100%; max-height: 100%; border-radius: 5px; box-shadow: 0 0 30px rgba(0,0,0,0.5); }
+        iframe.ioh_gallery_media_main { width: 100%; height: 500px; border: none; }
+
+        .ioh_gallery_close { position: absolute; top: 20px; right: 30px; color: white; font-size: 35px; cursor: pointer; }
+        .ioh_gallery_arrow { position: absolute; top: 50%; transform: translateY(-50%); color: white; font-size: 40px; cursor: pointer; padding: 20px; }
+        .ioh_gallery_prev { left: 10px; } .ioh_gallery_next { right: 10px; }
+
+        @media (max-width: 1400px) { .ioh_gallery_grid { grid-template-columns: repeat(5, 1fr); } }
+        @media (max-width: 1100px) { .ioh_gallery_grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 768px) {
+            .ioh_gallery_grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+
+    <section class="ioh_gallery_section">
+        <div class="ioh_gallery_toolbar">
+            <div class="ioh_gallery_top_row">
+                <button class="ioh_back_btn" id="ioh_back_btn" onclick="ioh_exitFolder()">
+                    <i class="fas fa-arrow-left"></i> Back to Folders
+                </button>
+                <h1 class="ioh_gallery_heading" id="ioh_main_heading">Albums</h1>
+            </div>
+
+            <div class="ioh_gallery_nav_row">
+                <div class="ioh_gallery_filter_group">
+                    <button class="ioh_gallery_filter_btn active" onclick="ioh_handleFilter('all', this)">All</button>
+                    <button class="ioh_gallery_filter_btn" onclick="ioh_handleFilter('image', this)">Photos</button>
+                    <button class="ioh_gallery_filter_btn" onclick="ioh_handleFilter('video', this)">Videos</button>
+                </div>
+
+                <div class="ioh_gallery_action_group">
+                    <div class="ioh_gallery_search_box">
+                        <input type="text" id="ioh_search_input" placeholder="Search..." onkeyup="ioh_handleSearch()">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ioh_gallery_grid" id="ioh_gallery_grid_container"></div>
+
+        <div class="ioh_gallery_pagination" id="ioh_gallery_pagination_bottom"></div>
+    </section>
+
+    <div id="ioh_gallery_popup">
+        <i class="fas fa-times ioh_gallery_close" onclick="ioh_closePopup()"></i>
+        <div class="ioh_gallery_arrow ioh_gallery_prev" onclick="ioh_moveSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+        <div class="ioh_gallery_arrow ioh_gallery_next" onclick="ioh_moveSlide(1)"><i class="fas fa-chevron-right"></i></div>
+        <div class="ioh_gallery_popup_box" id="ioh_gallery_popup_media"></div>
+        <div style="text-align:center; margin-top:20px;">
+            <h3 id="ioh_gallery_pop_title" style="color:#fff; margin:0;"></h3>
+            <p id="ioh_gallery_pop_desc" style="color:#888; margin-top:5px;"></p>
+        </div>
+    </div>
+
+    <script>
+        // --- 2. INJECT DATABASE DATA INTO JS ---
+        var ioh_galleryData = [{"id":"119","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767675135_503635613_2764774017065129_3076144075818045171_n.jpg","thumb":"admin\/db_image\/gallery\/1767675135_503635613_2764774017065129_3076144075818045171_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"118","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767675065_497531245_2742898299252701_5615309148980587639_n.jpg","thumb":"admin\/db_image\/gallery\/1767675065_497531245_2742898299252701_5615309148980587639_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"117","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767675031_497638908_2742898399252691_3079761573075146774_n.jpg","thumb":"admin\/db_image\/gallery\/1767675031_497638908_2742898399252691_3079761573075146774_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"116","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674984_497469422_2742898412586023_6529246193859241978_n.jpg","thumb":"admin\/db_image\/gallery\/1767674984_497469422_2742898412586023_6529246193859241978_n.jpg","vid_id":"","title":"Gift shop @ Thimphu Towers","desc":"Gift shop @ Thimphu Towers\r\n"},{"id":"115","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674947_497008070_2742619045947293_4568923081360456022_n.jpg","thumb":"admin\/db_image\/gallery\/1767674947_497008070_2742619045947293_4568923081360456022_n.jpg","vid_id":"","title":"Druk Super Star","desc":"Druk Super Star\r\n"},{"id":"114","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674919_497070669_2742618759280655_6123957217766765599_n.jpg","thumb":"admin\/db_image\/gallery\/1767674919_497070669_2742618759280655_6123957217766765599_n.jpg","vid_id":"","title":"Tarayana Fair","desc":"Tarayana Fair\r\n"},{"id":"113","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674892_497675730_2742619155947282_5931502804799621722_n.jpg","thumb":"admin\/db_image\/gallery\/1767674892_497675730_2742619155947282_5931502804799621722_n.jpg","vid_id":"","title":"Tarayana Fair","desc":"Tarayana Fair\r\n"},{"id":"112","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674852_497472231_2742560249286506_2338373811433697988_n.jpg","thumb":"admin\/db_image\/gallery\/1767674852_497472231_2742560249286506_2338373811433697988_n.jpg","vid_id":"","title":"Guest playing the Bhutanese Ngyencha","desc":"Guest playing the Bhutanese Ngyencha"},{"id":"111","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674822_497532702_2742557192620145_1804640439146004981_n.jpg","thumb":"admin\/db_image\/gallery\/1767674822_497532702_2742557192620145_1804640439146004981_n.jpg","vid_id":"","title":"Grilled fish.","desc":"Grilled fish.\r\n"},{"id":"110","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767674739_496925730_2742264382649426_532110953995945515_n.jpg","thumb":"admin\/db_image\/gallery\/1767674739_496925730_2742264382649426_532110953995945515_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"109","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767674624_503849584_2765106027031928_1197448927430470_n.jpg","thumb":"admin\/db_image\/gallery\/1767674624_503849584_2765106027031928_1197448927430470_n.jpg","vid_id":"","title":"Breakfast with view of the town square from Thimphu Towers","desc":"Breakfast with view of the town square from Thimphu Towers"},{"id":"108","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674565_463485468_2558539021021964_1031785726077409210_n.jpg","thumb":"admin\/db_image\/gallery\/1767674565_463485468_2558539021021964_1031785726077409210_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"107","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674521_505401160_2769813366561194_7943630621196280162_n.jpg","thumb":"admin\/db_image\/gallery\/1767674521_505401160_2769813366561194_7943630621196280162_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"106","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767674485_30261930_802650946610789_1323899526980829184_n.jpg","thumb":"admin\/db_image\/gallery\/1767674485_30261930_802650946610789_1323899526980829184_n.jpg","vid_id":"","title":"Corner room @ THIMPHU Tower","desc":"Corner room @ THIMPHU Tower\r\n"},{"id":"105","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674443_31131254_809250705950813_4917110162277269504_n.jpg","thumb":"admin\/db_image\/gallery\/1767674443_31131254_809250705950813_4917110162277269504_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"104","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674418_31166838_809250709284146_3665579915111038976_n.jpg","thumb":"admin\/db_image\/gallery\/1767674418_31166838_809250709284146_3665579915111038976_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"103","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767674338_31180065_809250749284142_7266160070042320896_n.jpg","thumb":"admin\/db_image\/gallery\/1767674338_31180065_809250749284142_7266160070042320896_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"102","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767674312_31234954_809250769284140_766485666144976896_n.jpg","thumb":"admin\/db_image\/gallery\/1767674312_31234954_809250769284140_766485666144976896_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"101","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767674268_31171404_809250799284137_1431129334055174144_n.jpg","thumb":"admin\/db_image\/gallery\/1767674268_31171404_809250799284137_1431129334055174144_n.jpg","vid_id":"","title":"The premium category","desc":"The premium category"},{"id":"100","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674184_31180062_809250832617467_4588361476971954176_n.jpg","thumb":"admin\/db_image\/gallery\/1767674184_31180062_809250832617467_4588361476971954176_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"99","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767674125_39906035_901965090012707_747273001824681984_n.jpg","thumb":"admin\/db_image\/gallery\/1767674125_39906035_901965090012707_747273001824681984_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"98","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673953_41072600_911335879075628_1366573531759902720_n.jpg","thumb":"admin\/db_image\/gallery\/1767673953_41072600_911335879075628_1366573531759902720_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"97","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673834_41078185_911335945742288_1323806107147173888_n.jpg","thumb":"admin\/db_image\/gallery\/1767673834_41078185_911335945742288_1323806107147173888_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"96","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673795_41099636_911335952408954_8101777680107569152_n.jpg","thumb":"admin\/db_image\/gallery\/1767673795_41099636_911335952408954_8101777680107569152_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"95","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673698_48930756_977398039136078_8187560937356525568_n.jpg","thumb":"admin\/db_image\/gallery\/1767673698_48930756_977398039136078_8187560937356525568_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"94","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673669_57038299_1044593362416545_8122823685577900032_n.jpg","thumb":"admin\/db_image\/gallery\/1767673669_57038299_1044593362416545_8122823685577900032_n.jpg","vid_id":"","title":"With a fabulous group of Danish guest","desc":"With a fabulous group of Danish guest\r\n"},{"id":"93","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673622_61795821_1077179225824625_5935966663626194944_n.jpg","thumb":"admin\/db_image\/gallery\/1767673622_61795821_1077179225824625_5935966663626194944_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"92","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673584_61267851_1077179252491289_7034355020015337472_n.jpg","thumb":"admin\/db_image\/gallery\/1767673584_61267851_1077179252491289_7034355020015337472_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"91","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673514_67230797_1117483591794188_3428853180455190528_n.jpg","thumb":"admin\/db_image\/gallery\/1767673514_67230797_1117483591794188_3428853180455190528_n.jpg","vid_id":"","title":"Impromptu birthday celebration for our dearest Dharma","desc":"Impromptu birthday celebration for our dearest Dharma"},{"id":"90","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673473_67797870_1117483598460854_3865240558016397312_n.jpg","thumb":"admin\/db_image\/gallery\/1767673473_67797870_1117483598460854_3865240558016397312_n.jpg","vid_id":"","title":"Impromptu birthday celebration for our dearest Dharma","desc":"Impromptu birthday celebration for our dearest Dharma"},{"id":"89","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673427_70679347_1158696107672936_6238361146135412736_n.jpg","thumb":"admin\/db_image\/gallery\/1767673427_70679347_1158696107672936_6238361146135412736_n.jpg","vid_id":"","title":"Team Thimphu Tower, Run to give","desc":"Team Thimphu Tower, Run to give"},{"id":"88","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673367_74482917_1191587331050480_6986413358106804224_n.jpg","thumb":"admin\/db_image\/gallery\/1767673367_74482917_1191587331050480_6986413358106804224_n.jpg","vid_id":"","title":"Coronation marathon","desc":"Coronation marathon"},{"id":"87","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673317_76751430_1202062763336270_7977359534173716480_n.jpg","thumb":"admin\/db_image\/gallery\/1767673317_76751430_1202062763336270_7977359534173716480_n.jpg","vid_id":"","title":"n our initiative to Go Green we are trying to minimize the use of plastic , we have outsourced these laundry baskets from a women\u2019s group in Samdrupjo","desc":"n our initiative to Go Green we are trying to minimize the use of plastic , we have outsourced these laundry baskets from a women\u2019s group in Samdrupjongkhar . These baskets are made from recycled water bottles ."},{"id":"86","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673260_78034506_1221192268089986_5130286423018045440_n.jpg","thumb":"admin\/db_image\/gallery\/1767673260_78034506_1221192268089986_5130286423018045440_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"85","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673164_78594149_1221192284756651_3546178625986363392_n.jpg","thumb":"admin\/db_image\/gallery\/1767673164_78594149_1221192284756651_3546178625986363392_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"84","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767673105_77309734_1221192348089978_4620803319168761856_n.jpg","thumb":"admin\/db_image\/gallery\/1767673105_77309734_1221192348089978_4620803319168761856_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"83","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672975_78095852_1221192521423294_1320255655252066304_n.jpg","thumb":"admin\/db_image\/gallery\/1767672975_78095852_1221192521423294_1320255655252066304_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"82","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672834_95734373_1350831288459416_4002169406812585984_n.jpg","thumb":"admin\/db_image\/gallery\/1767672834_95734373_1350831288459416_4002169406812585984_n.jpg","vid_id":"","title":"Commercial space available for rent @ Thimphu Tower , contact 17110988","desc":"Commercial space available for rent @ Thimphu Tower , contact 17110988"},{"id":"81","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672784_107905916_1404313453111199_4169450228955264342_n.jpg","thumb":"admin\/db_image\/gallery\/1767672784_107905916_1404313453111199_4169450228955264342_n.jpg","vid_id":"","title":"First veggie harvest for team Thimphu Tower , all the hard work is finally paying off ","desc":"First veggie harvest for team Thimphu Tower , all the hard work is finally paying off"},{"id":"80","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672691_107766147_1406877346188143_3469776658694549157_n.jpg","thumb":"admin\/db_image\/gallery\/1767672691_107766147_1406877346188143_3469776658694549157_n.jpg","vid_id":"","title":"Fully furnished restaurant for lease at Hotel Thimphu Tower , Message @ 17110988 for details .","desc":"Fully furnished restaurant for lease at Hotel Thimphu Tower , Message @ 17110988 for details ."},{"id":"79","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672527_111373788_1415672071975337_118967420216989322_n.jpg","thumb":"admin\/db_image\/gallery\/1767672527_111373788_1415672071975337_118967420216989322_n.jpg","vid_id":"","title":"Wishing our dearest Dharma a fabulous birthday","desc":"Wishing our dearest Dharma a fabulous birthday"},{"id":"78","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767672386_118947971_1454837428058801_2812233384787870651_n.jpg","thumb":"admin\/db_image\/gallery\/1767672386_118947971_1454837428058801_2812233384787870651_n.jpg","vid_id":"","title":"in Thimphu, Bhutan.","desc":"in Thimphu, Bhutan."},{"id":"77","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672307_473804782_1157294703062906_6208348010160250134_n.jpg","thumb":"admin\/db_image\/gallery\/1767672307_473804782_1157294703062906_6208348010160250134_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"76","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672268_485393256_1211270930998616_6910306098183706429_n.jpg","thumb":"admin\/db_image\/gallery\/1767672268_485393256_1211270930998616_6910306098183706429_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"75","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767672130_485166442_1211270990998610_4065409894872348283_n.jpg","thumb":"admin\/db_image\/gallery\/1767672130_485166442_1211270990998610_4065409894872348283_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"74","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767672059_487059898_1217757733683269_5814407714699522486_n.jpg","thumb":"admin\/db_image\/gallery\/1767672059_487059898_1217757733683269_5814407714699522486_n.jpg","vid_id":"","title":"All set for the winter , thank you gift for team Thimphu tower","desc":"All set for the winter , thank you gift for team Thimphu tower"},{"id":"73","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767671982_488314457_1224032013055841_6414098111280942167_n.jpg","thumb":"admin\/db_image\/gallery\/1767671982_488314457_1224032013055841_6414098111280942167_n.jpg","vid_id":"","title":"Inside_bhutan beautiful picture","desc":"Inside_bhutan beautiful picture\r\n"},{"id":"72","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767671883_488933664_1228169695975406_775515303123390625_n.jpg","thumb":"admin\/db_image\/gallery\/1767671883_488933664_1228169695975406_775515303123390625_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"70","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767671712_489930134_1229261662532876_3216232103948397678_n.jpg","thumb":"admin\/db_image\/gallery\/1767671712_489930134_1229261662532876_3216232103948397678_n.jpg","vid_id":"","title":"Much appreciated for the surprise birthday . Thank you all \u2014 feeling blessed.","desc":"Much appreciated for the surprise birthday . Thank you all\r\n\u2014 feeling blessed."},{"id":"69","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767671243_490438041_1230758379049871_3594064157646934064_n.jpg","thumb":"admin\/db_image\/gallery\/1767671243_490438041_1230758379049871_3594064157646934064_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"68","folder":"Single Room","type":"image","src":"admin\/db_image\/gallery\/1767671190_30261930_802650946610789_1323899526980829184_n.jpg","thumb":"admin\/db_image\/gallery\/1767671190_30261930_802650946610789_1323899526980829184_n.jpg","vid_id":"","title":"Corner room @ THIMPHU Tower","desc":"Corner room @ THIMPHU Tower"},{"id":"67","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767671146_490448984_1230758305716545_3108714362324499133_n.jpg","thumb":"admin\/db_image\/gallery\/1767671146_490448984_1230758305716545_3108714362324499133_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"66","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767671103_491099446_1235540328571676_1560480471781771478_n.jpg","thumb":"admin\/db_image\/gallery\/1767671103_491099446_1235540328571676_1560480471781771478_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"65","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767671049_492073458_1235540431904999_3131448820363007290_n.jpg","thumb":"admin\/db_image\/gallery\/1767671049_492073458_1235540431904999_3131448820363007290_n.jpg","vid_id":"","title":"Photo","desc":"Thimhpu Tower Photos"},{"id":"64","folder":"Room \u0026 Services","type":"image","src":"admin\/db_image\/gallery\/1767670801_31131669_809250812617469_2632452946834489344_n.jpg","thumb":"admin\/db_image\/gallery\/1767670801_31131669_809250812617469_2632452946834489344_n.jpg","vid_id":"","title":"Our Dining Table","desc":"Our Dining Table"},{"id":"63","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767670586_496498837_1259314556194253_561492078418222543_n.jpg","thumb":"admin\/db_image\/gallery\/1767670586_496498837_1259314556194253_561492078418222543_n.jpg","vid_id":"","title":"Photo","desc":"Photo"},{"id":"62","folder":"Thimphu Tower Photos","type":"image","src":"admin\/db_image\/gallery\/1767670082_494765914_1252751876850521_4393599997100111027_n.jpg","thumb":"admin\/db_image\/gallery\/1767670082_494765914_1252751876850521_4393599997100111027_n.jpg","vid_id":"","title":"All set for our Romanian guest ","desc":"All set for our Romanian guest "},{"id":"61","folder":"Single Room","type":"image","src":"admin\/db_image\/gallery\/1767618152_bed1.jpg","thumb":"admin\/db_image\/gallery\/1767618152_bed1.jpg","vid_id":"","title":"BED ROOM","desc":"A Luxury Room"}];
+
+        var ioh_itemsPerPage = 20;
+        let ioh_currentPage = 1;
+        let ioh_currentFolder = null;
+        let ioh_filteredData = [];
+        let ioh_currentType = 'all';
+        let ioh_searchQuery = '';
+        let ioh_popupIndex = 0;
+
+        function ioh_init() {
+            if(ioh_galleryData.length === 0) {
+                document.getElementById('ioh_gallery_grid_container').innerHTML = '<p style="text-align:center; width:100%; color:#888;">No media found in database.</p>';
+                return;
+            }
+            ioh_renderFolders();
+        }
+
+        // Helper: Detect Social Platform
+        function ioh_getSocialType(url) {
+            if(url.includes('facebook.com') || url.includes('fb.watch')) return 'facebook';
+            if(url.includes('instagram.com')) return 'instagram';
+            if(url.includes('tiktok.com')) return 'tiktok';
+            if(url.includes('vimeo.com')) return 'vimeo';
+            return 'external';
+        }
+
+        // Helper: Get Clean Embed URL for Iframe-supported sites
+        function ioh_getSocialEmbed(url, type) {
+            if (type === 'facebook') return `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(url)}&show_text=0&width=560`;
+            if (type === 'vimeo') return `https://player.vimeo.com/video/${url.split('/').pop()}`;
+            return url;
+        }
+
+        // --- RENDER FOLDERS (Standard) ---
+        function ioh_renderFolders() {
+            ioh_currentFolder = null;
+            document.getElementById('ioh_back_btn').style.display = 'none';
+            document.getElementById('ioh_main_heading').innerText = "Gallery Folders";
+            document.getElementById('ioh_gallery_pagination_bottom').innerHTML = '';
+            document.querySelector('.ioh_gallery_nav_row').style.display = 'none';
+
+            const grid = document.getElementById('ioh_gallery_grid_container');
+            grid.innerHTML = '';
+
+            const folderMap = {};
+            ioh_galleryData.forEach(item => {
+                let fName = item.folder || 'Uncategorized';
+                if (!folderMap[fName]) folderMap[fName] = [];
+                folderMap[fName].push(item);
+            });
+
+            Object.keys(folderMap).forEach(folderName => {
+                const items = folderMap[folderName];
+                const getCover = (idx) => {
+                    if(!items[idx]) return 'https://via.placeholder.com/250?text=Empty';
+                    if(items[idx].type === 'image' || items[idx].type === 'youtube') return items[idx].thumb || items[idx].src;
+                    if(items[idx].type === 'local_video') return items[idx].src;
+                    return 'SOCIAL_PLACEHOLDER';
+                };
+
+                const c1 = getCover(0);
+                let layer1HTML = '';
+
+                if(c1 === 'SOCIAL_PLACEHOLDER') {
+                    layer1HTML = `<div style="width:100%;height:100%;background:#444;color:#fff;display:flex;align-items:center;justify-content:center;"><i class="fas fa-play-circle fa-2x"></i></div>`;
+                } else if(items[0].type === 'local_video') {
+                    layer1HTML = `<video src="${c1}" style="width:100%;height:100%;object-fit:cover;"></video>`;
+                } else {
+                    layer1HTML = `<img src="${c1}" style="width:100%;height:100%;object-fit:cover;">`;
+                }
+
+                const div = document.createElement('div');
+                div.innerHTML = `
+                <div class="ioh_folder_stack" onclick="ioh_enterFolder('${folderName}')">
+                    <div class="ioh_stack_layer ioh_layer_3" style="background:#ddd;"></div>
+                    <div class="ioh_stack_layer ioh_layer_2" style="background:#ccc;"></div>
+                    <div class="ioh_stack_layer ioh_layer_1">${layer1HTML}</div>
+                </div>
+                <div class="ioh_folder_title_box">
+                    <div class="ioh_folder_name">${folderName}</div>
+                    <div class="ioh_folder_count">${items.length} Items</div>
+                </div>
+            `;
+                grid.appendChild(div);
+            });
+        }
+
+        function ioh_enterFolder(folderName) {
+            ioh_currentFolder = folderName;
+            ioh_currentPage = 1;
+            document.getElementById('ioh_back_btn').style.display = 'block';
+            document.getElementById('ioh_main_heading').innerText = folderName;
+            document.querySelector('.ioh_gallery_nav_row').style.display = 'flex';
+            ioh_applyLogic();
+        }
+        function ioh_exitFolder() { ioh_renderFolders(); }
+
+        // --- PAGINATION ---
+        function ioh_renderPagination() {
+            const totalPages = Math.ceil(ioh_filteredData.length / ioh_itemsPerPage);
+            const container = document.getElementById('ioh_gallery_pagination_bottom');
+            container.innerHTML = '';
+            if (totalPages <= 1) return;
+
+            const createBtn = (i, content, disabled) => {
+                const btn = document.createElement('button');
+                btn.className = `ioh_gallery_page_btn ${i === ioh_currentPage ? 'active' : ''}`;
+                btn.innerHTML = content;
+                if(disabled) btn.disabled = true;
+                btn.onclick = () => { if(!disabled){ ioh_currentPage = i; ioh_renderGallery(); window.scrollTo(0,0); }};
+                container.appendChild(btn);
+            };
+
+            createBtn(ioh_currentPage - 1, '<i class="fas fa-chevron-left"></i>', ioh_currentPage === 1);
+            for (let i = 1; i <= totalPages; i++) {
+                if (totalPages > 7 && Math.abs(i - ioh_currentPage) > 2 && i !== 1 && i !== totalPages) continue;
+                createBtn(i, i, false);
+            }
+            createBtn(ioh_currentPage + 1, '<i class="fas fa-chevron-right"></i>', ioh_currentPage === totalPages);
+        }
+
+        // --- RENDER GRID ---
+        function ioh_renderGallery() {
+            const grid = document.getElementById('ioh_gallery_grid_container');
+            grid.innerHTML = '';
+            const start = (ioh_currentPage - 1) * ioh_itemsPerPage;
+            const pageItems = ioh_filteredData.slice(start, start + ioh_itemsPerPage);
+
+            if(pageItems.length === 0) { grid.innerHTML = '<p style="text-align:center;width:100%;grid-column:1/-1;">No media found.</p>'; return; }
+
+            pageItems.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = 'ioh_gallery_item animate_spread';
+                div.style.animationDelay = (index * 0.03) + 's';
+                div.onclick = () => ioh_openPopup(start + index);
+
+                let mediaHTML = '', iconClass = '', badgeText = '';
+
+                if (item.type === 'youtube') {
+                    mediaHTML = `<img src="${item.thumb}">`; iconClass = 'ioh_gallery_video_icon'; badgeText = 'YouTube';
+                } else if (item.type === 'local_video') {
+                    mediaHTML = `<video src="${item.src}" preload="metadata" style="object-fit:cover; width:100%; height:100%" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>`; iconClass = 'ioh_gallery_video_icon';
+                } else if (item.type === 'external_video') {
+                    const socialType = ioh_getSocialType(item.src);
+                    let socialIcon = 'fa-link', socialClass = 'social-vimeo';
+                    if(socialType === 'facebook') { socialIcon = 'fa-facebook-f'; socialClass = 'social-fb'; badgeText = 'Facebook'; }
+                    else if(socialType === 'instagram') { socialIcon = 'fa-instagram'; socialClass = 'social-insta'; badgeText = 'Instagram'; }
+                    else if(socialType === 'tiktok') { socialIcon = 'fa-tiktok'; socialClass = 'social-tiktok'; badgeText = 'TikTok'; }
+                    else if(socialType === 'vimeo') { socialIcon = 'fa-vimeo-v'; socialClass = 'social-vimeo'; badgeText = 'Vimeo'; }
+                    mediaHTML = `<div class="ioh_social_card ${socialClass}"><i class="fab ${socialIcon}"></i><span>${socialType}</span></div>`;
+                    iconClass = 'social_hide_icon';
+                } else { mediaHTML = `<img src="${item.src}">`; }
+
+                const badgeHTML = badgeText ? `<div class="ioh_social_badge" style="background:#000;">${badgeText}</div>` : '';
+                const playIconHTML = iconClass !== 'social_hide_icon' && iconClass !== '' ? `<div class="${iconClass}"><i class="fas fa-play"></i></div>` : '';
+                div.innerHTML = `${mediaHTML}${playIconHTML}${badgeHTML}<div class="ioh_gallery_card_overlay"><div class="ioh_gallery_card_title">${item.title}</div></div>`;
+                grid.appendChild(div);
+            });
+            ioh_renderPagination();
+        }
+
+        function ioh_applyLogic() {
+            if (!ioh_currentFolder) return;
+            ioh_filteredData = ioh_galleryData.filter(item => {
+                let fName = item.folder || 'Uncategorized';
+                return fName === ioh_currentFolder &&
+                    (ioh_currentType === 'all' || (ioh_currentType === 'image' && item.type === 'image') || (ioh_currentType === 'video' && item.type !== 'image')) &&
+                    item.title.toLowerCase().includes(ioh_searchQuery);
+            });
+            ioh_renderGallery();
+        }
+        function ioh_handleFilter(type, btn) { ioh_currentType = type; document.querySelectorAll('.ioh_gallery_filter_btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); ioh_currentPage = 1; if(ioh_currentFolder) ioh_applyLogic(); }
+        function ioh_handleSearch() { ioh_searchQuery = document.getElementById('ioh_search_input').value.toLowerCase(); ioh_currentPage = 1; if(ioh_currentFolder) ioh_applyLogic(); }
+
+        // --- POPUP LOGIC (Fixed Instagram) ---
+        function ioh_openPopup(index) {
+            ioh_popupIndex = index;
+            const item = ioh_filteredData[ioh_popupIndex];
+            const mediaBox = document.getElementById('ioh_gallery_popup_media');
+
+            let content = '';
+            let scriptToLoad = null;
+
+            if (item.type === 'youtube') {
+                content = `<iframe class="ioh_gallery_media_main" src="https://www.youtube.com/embed/${item.vid_id}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+            }
+            else if (item.type === 'local_video') {
+                content = `<video src="${item.src}" controls autoplay class="ioh_gallery_media_main"></video>`;
+            }
+            else if (item.type === 'external_video') {
+                const sType = ioh_getSocialType(item.src);
+
+                // --- TIKTOK ---
+                if (sType === 'tiktok') {
+                    let videoId = ''; try { videoId = item.src.split('/video/')[1].split('?')[0]; } catch(e) { videoId = ''; }
+                    content = `<div style="background:white; padding:10px; border-radius:8px; display:flex; justify-content:center; width:100%; max-height:80vh; overflow-y:auto;">
+                            <blockquote class="tiktok-embed" cite="${item.src}" data-video-id="${videoId}" style="max-width: 605px;min-width: 325px;">
+                                <section> <a target="_blank" href="${item.src}">Watch on TikTok</a> </section>
+                            </blockquote></div>`;
+                    scriptToLoad = 'tiktok';
+                }
+                // --- INSTAGRAM FIXED ---
+                else if (sType === 'instagram') {
+                    // 1. EXTRACT ID: Finds the ID between /reel/ or /p/ and the next slash
+                    const matches = item.src.match(/(?:reel|p)\/([a-zA-Z0-9_-]+)/);
+                    const instaId = matches ? matches[1] : '';
+
+                    // 2. BUILD CLEAN URL: No usernames, no query params
+                    const cleanUrl = `https://www.instagram.com/reel/${instaId}/`;
+
+                    content = `
+                    <div style="background:white; border-radius:4px; display:flex; justify-content:center; align-items:center; width:500px; max-width:90vw; max-height:85vh; overflow-y:auto; overflow-x:hidden;">
+                         <blockquote class="instagram-media"
+                            data-instgrm-captioned
+                            data-instgrm-permalink="${cleanUrl}"
+                            data-instgrm-version="14"
+                            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        </blockquote>
+                    </div>`;
+                    scriptToLoad = 'instagram';
+                }
+                // --- FACEBOOK / VIMEO ---
+                else if(sType === 'facebook' || sType === 'vimeo') {
+                    const embedUrl = ioh_getSocialEmbed(item.src, sType);
+                    content = `<iframe class="ioh_gallery_media_main" src="${embedUrl}" allowfullscreen scrolling="no" style="background:white;"></iframe>`;
+                }
+                else {
+                    content = `<div style="text-align:center; color:white;"><h3>External Link</h3><a href="${item.src}" target="_blank" style="padding:10px 20px; background:#fff; border-radius:5px;">Open Link</a></div>`;
+                }
+            } else {
+                content = `<img src="${item.src}" class="ioh_gallery_media_main">`;
+            }
+
+            mediaBox.innerHTML = content;
+            document.getElementById('ioh_gallery_pop_title').innerText = item.title;
+            document.getElementById('ioh_gallery_pop_desc').innerText = item.desc;
+            document.getElementById('ioh_gallery_popup').classList.add('show');
+            document.body.style.overflow = 'hidden';
+
+            // --- LOAD SCRIPTS ---
+            if (scriptToLoad === 'tiktok') {
+                const old = document.getElementById('tiktok-embed-script');
+                if(old) old.remove();
+                const s = document.createElement('script');
+                s.id = 'tiktok-embed-script'; s.src = "https://www.tiktok.com/embed.js"; s.async = true;
+                document.body.appendChild(s);
+            }
+            if (scriptToLoad === 'instagram') {
+                const triggerInsta = () => { if (window.instgrm) window.instgrm.Embeds.process(); };
+                if (!document.getElementById('instagram-embed-script')) {
+                    const s = document.createElement('script');
+                    s.id = 'instagram-embed-script'; s.src = "//www.instagram.com/embed.js"; s.async = true;
+                    s.onload = triggerInsta;
+                    document.body.appendChild(s);
+                } else {
+                    setTimeout(triggerInsta, 200); // Slight delay for DOM readiness
+                }
+            }
+        }
+
+        function ioh_closePopup() {
+            document.getElementById('ioh_gallery_popup').classList.remove('show');
+            document.getElementById('ioh_gallery_popup_media').innerHTML = '';
+            document.body.style.overflow = 'auto';
+        }
+        function ioh_moveSlide(step) {
+            ioh_popupIndex += step;
+            if (ioh_popupIndex >= ioh_filteredData.length) ioh_popupIndex = 0;
+            if (ioh_popupIndex < 0) ioh_popupIndex = ioh_filteredData.length - 1;
+            ioh_openPopup(ioh_popupIndex);
+        }
+        ioh_init();
+    </script>
+
+<footer>
+    <div class="footer_class">
+        <div class="about_us footer_div">
+            <h1>About Thimpu Tower Hotel</h1>
+            <p>Located in the heart of the city, we have 28 rooms overlooking the Clock tower square and the Changlimithang stadium. <a href="#">Read More</a></p>
+
+            <div class="social_icon">
+                <a href="https://www.facebook.com/profile.php?id=100063471611976&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+
+        </div>
+        <div class="quick_link footer_div">
+            <h1>Quick Link</h1>
+            <ul>
+                <li><a href="index.php"><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                <li><a href="rooms.php"><i class="fa-solid fa-angle-right"></i>Room</a></li>
+                <li><a href="activite.php"><i class="fa-solid fa-angle-right"></i>Activities</a></li>
+                <li><a href="about_us.php"><i class="fa-solid fa-angle-right"></i>About us</a></li>
+                <li><a href="contact.php"><i class="fa-solid fa-angle-right"></i>Contact</a></li>
+                <li><a href="gallary.php"><i class="fa-solid fa-angle-right"></i>Gallary</a></li>
+
+            </ul>
+            
+        </div>
+        <div class="Address footer_div">
+            <h1>Address</h1>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-house-chimney"></i></p>
+                <p>Clock Tower Square <br>Thimpu, Bhutan, 00975</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-tty"></i></p>
+                <p>+975 2 335 367</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-envelope-circle-check"></i></p>
+                <p>thimphutowers@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="subscribe footer_div">
+            <h1>Newsletter</h1>
+            <p>If you have any questions or need help contact with our team.</p>
+            <div class="input">
+                <input type="text" placeholder="Enter your Email">
+                <button>Subscribe Now</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="power_footer">@2024 Developed & maintained by <a href="https://l2nsoft.com/" target="_blank">L2N Private Limited</a>, Powered by Paperles</div>
+</footer>
+
+
+
+
+<script src="asset/java/myscript.js"></script>
+<script src="asset/java/sliderscript.js"></script>
+<script src="asset/java/counterscript.js"></script>
+

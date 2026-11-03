@@ -1,0 +1,18 @@
+# Old PHP URLs -> new routes (Netlify / Cloudflare Pages format)
+/index.php        /                         301
+/rooms.php        /rooms/                   301
+/del_single.php   /rooms/deluxe-single/     301
+/del_double.php   /rooms/deluxe-double/     301
+/pre_single.php   /rooms/premium-single/    301
+/pre_double.php   /rooms/premium-double/    301
+/activite.php     /experiences/             301
+/about_us.php     /about/                   301
+/gallery.php      /gallery/                 301
+/gallary.php      /gallery/                 301
+/contact.php      /contact/                 301
+/downloads.php    /downloads/               301
+/360tour.php      /gallery/                 302
+/signin.php       /                         301
+/signup.php       /                         301
+/image/reports/Harvard_MIT_GROUP_1_Report_2025.pdf     /downloads/Harvard_MIT_GROUP_1_Report_2025.pdf     301
+/image/reports/Harvard_MIT_Trek_Group_2_Report_2026.pdf /downloads/Harvard_MIT_Trek_Group_2_Report_2026.pdf 301

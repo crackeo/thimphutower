@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf2c68b583.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="asset/Css/style.css">
+    <link rel="stylesheet" href="asset/Css/header.css">
+    <link rel="stylesheet" href="asset/Css/responsive.css">
+    <link rel="stylesheet" href="asset/Css/signup_in.css">
+    <link rel="stylesheet" href="asset/Css/about.css">
+    <link rel="stylesheet" href="asset/Css/activite.css">
+    <link rel="stylesheet" href="asset/Css/contact.css">
+    <link rel="stylesheet" href="asset/Css/gallery.css">
+    <link rel="stylesheet" href="asset/Css/rooms.css">
+    <link rel="stylesheet" href="asset/Css/ver_tour.css">
+    <link rel="stylesheet" href="asset/Css/del_single.css">
+    <link rel="stylesheet" href="asset/Css/book_now.css">
+
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>Thimphu Tower Hotel</title>
+</head>
+<body>
+    <header>
+        <div class="navbar_one">
+            <div class="address ">
+                <p><i class="fa-solid fa-envelope"></i> thimphutowers@gmail.com</p>
+				<p><i class="fa-solid fa-phone-volume"></i>+975 2 335 367 </p>
+            </div>
+            <div class="slogan desk_slogaon">
+
+            </div>
+            <div class="my_account">
+                <span class="my_account_top">
+                    <p class="top1" onclick="showlogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-down"></i></p>
+                    <p class="top2" onclick="hidelogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-up"></i></p>                    
+                </span>
+                <span>
+                    <ul class="login_bar">
+                        <a href="signin.php"><li><i class="fa-solid fa-right-to-bracket"></i>Login</li></a>
+                        <a href="signup.php"><li><i class="fa-solid fa-clipboard-user" style="padding: 0px 10px 0px 14px;"></i>Register</li></a>
+                    </ul>
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-----Main Navigation Bar--->
+        <div class="main_navbar">
+            <div class="header_logo">
+                <a href="#"><img src="image/logo.png" alt=""></a>
+                <a href="#"></a><h1>Thimphu Tower</h1></a>
+                
+            </div>
+            <div class="toggole">
+				<i class="fa-solid fa-bars" onclick="showbarToggole()"></i>
+				<i class="fa-solid fa-xmark" onclick="hidebarToggole()" id="Xbar"></i>				
+			</div>
+            <div class="navbar">
+                <ul class="main_manu">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="rooms.php">Rooms</li>
+                    <li><a href="activite.php">Activities</li>                 
+                    <li><a href="about_us.php">About us</li>
+                    <li><a href="downloads.php">Downloads</a>
+                    <li><a href="gallery.php">Gallery</li>
+                    <li><a href="contact.php">Contact</a>
+
+                        <!-- <ul class="Dropdown">
+                            <a href="#"><li>Our Approch</li></a>
+                            <a href="#"><li>How we Work</li></a>
+                        </ul>  -->
+                    </li>
+                    <a href="360tour.php" style="display: none;"><button class="nav_btn">Virtual Tour <i class="fa-solid fa-street-view"></i> </button></a>
+
+
+                </ul>
+                
+            </div>
+            
+        </div>
+    </header>
+<script src="asset/java/main_script"></script>
+
+</body>
+</html>
+<section class="rooms_page_header">
+    <h1>Contact US </h1>
+    <p>Get in touch. Our best rooms available for your vacation</p>
+</section>
+
+<section class="contact_us">
+    
+   <div class="contact_area">
+        <div class="massage_box">
+            <h1>Get In <span style="color: #0E0D0E;">Touch</span></h1>
+            <p>Please fill out the form below and we will get back to you as soon as possible. Need quicker answers? Call us at given numbers.</p><br>
+            <div class="laval_box">
+                <div class="input_box_area">
+                    <label for="fullname">Your Name :</label><br>
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="input_box_area">
+                    <label for="fullname">Your Email :</label><br>
+                    <input type="text" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="laval_box">
+                <div class="input_box_area">
+                    <label for="fullname">Subject :</label><br>
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="input_box_area">
+                    <label for="fullname">Phone Number :</label><br>
+                    <input type="text" placeholder="Enter Number">
+                </div>
+            </div>
+            <div class="text_massage_box">
+                <textarea name="text" id="text" placeholder="Massage"></textarea>
+            </div>
+            <div class="laval_box">
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="our_address">
+            <h1>Our <span style="color: #0E0D0E;">Address</span></h1>
+            <div class="location_address">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>
+                    <h4>Hotel Address</h4>
+                    <p>Clock Tower Square, Thimphu <br>Thimpu, Bhutan, 00975</p>
+                </span>
+            </div>
+            <div class="location_address">
+                <i class="fa-solid fa-tty"></i>
+                <span>
+                    <h4>Phone Number</h4>
+                    <p>+975 2 335 367</p>
+                </span>
+            </div>
+            <div class="location_address">
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h4>Email Address</h4>
+                    <p>thimphutowers@gmail.com</p>
+                </span>
+            </div>
+
+        </div>
+
+   </div>
+</section>
+
+<section class="google_map">
+    <div class="map_area">
+        <h1>Get <span style="color: #0E0D0E;">Direction</span></h1>
+                
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.8533434565584!2d89.6361152754591!3d27.47382477631731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e19413da3c9aad%3A0x8c89d290f530ecc!2sHotel%20Thimphu%20Tower!5e0!3m2!1sen!2sbd!4v1718185014340!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+</section>
+
+<footer>
+    <div class="footer_class">
+        <div class="about_us footer_div">
+            <h1>About Thimpu Tower Hotel</h1>
+            <p>Located in the heart of the city, we have 28 rooms overlooking the Clock tower square and the Changlimithang stadium. <a href="#">Read More</a></p>
+
+            <div class="social_icon">
+                <a href="https://www.facebook.com/profile.php?id=100063471611976&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+
+        </div>
+        <div class="quick_link footer_div">
+            <h1>Quick Link</h1>
+            <ul>
+                <li><a href="index.php"><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                <li><a href="rooms.php"><i class="fa-solid fa-angle-right"></i>Room</a></li>
+                <li><a href="activite.php"><i class="fa-solid fa-angle-right"></i>Activities</a></li>
+                <li><a href="about_us.php"><i class="fa-solid fa-angle-right"></i>About us</a></li>
+                <li><a href="contact.php"><i class="fa-solid fa-angle-right"></i>Contact</a></li>
+                <li><a href="gallary.php"><i class="fa-solid fa-angle-right"></i>Gallary</a></li>
+
+            </ul>
+            
+        </div>
+        <div class="Address footer_div">
+            <h1>Address</h1>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-house-chimney"></i></p>
+                <p>Clock Tower Square <br>Thimpu, Bhutan, 00975</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-tty"></i></p>
+                <p>+975 2 335 367</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-envelope-circle-check"></i></p>
+                <p>thimphutowers@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="subscribe footer_div">
+            <h1>Newsletter</h1>
+            <p>If you have any questions or need help contact with our team.</p>
+            <div class="input">
+                <input type="text" placeholder="Enter your Email">
+                <button>Subscribe Now</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="power_footer">@2024 Developed & maintained by <a href="https://l2nsoft.com/" target="_blank">L2N Private Limited</a>, Powered by Paperles</div>
+</footer>
+
+
+
+
+<script src="asset/java/myscript.js"></script>
+<script src="asset/java/sliderscript.js"></script>
+<script src="asset/java/counterscript.js"></script>
+

@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    /* Custom alert box */
+#customAlertBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: none;
+    max-width: 90vw;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#customAlertBox.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+#customAlertBox.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+#customAlertBox button {
+    margin-top: 15px;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#customAlertBox button:hover {
+    background-color: #000;
+}
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf2c68b583.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="asset/Css/style.css">
+    <link rel="stylesheet" href="asset/Css/header.css">
+    <link rel="stylesheet" href="asset/Css/responsive.css">
+    <link rel="stylesheet" href="asset/Css/signup_in.css">
+    <link rel="stylesheet" href="asset/Css/about.css">
+    <link rel="stylesheet" href="asset/Css/activite.css">
+    <link rel="stylesheet" href="asset/Css/contact.css">
+    <link rel="stylesheet" href="asset/Css/gallery.css">
+    <link rel="stylesheet" href="asset/Css/rooms.css">
+    <link rel="stylesheet" href="asset/Css/ver_tour.css">
+    <link rel="stylesheet" href="asset/Css/del_single.css">
+    <link rel="stylesheet" href="asset/Css/book_now.css">
+
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>Thimphu Tower Hotel</title>
+</head>
+<body>
+    <header>
+        <div class="navbar_one">
+            <div class="address ">
+                <p><i class="fa-solid fa-envelope"></i> thimphutowers@gmail.com</p>
+				<p><i class="fa-solid fa-phone-volume"></i>+975 2 335 367 </p>
+            </div>
+            <div class="slogan desk_slogaon">
+
+            </div>
+            <div class="my_account">
+                <span class="my_account_top">
+                    <p class="top1" onclick="showlogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-down"></i></p>
+                    <p class="top2" onclick="hidelogin()"><i class="fa-solid fa-user"></i> My Account<i class="fa-solid fa-sort-up"></i></p>                    
+                </span>
+                <span>
+                    <ul class="login_bar">
+                        <a href="signin.php"><li><i class="fa-solid fa-right-to-bracket"></i>Login</li></a>
+                        <a href="signup.php"><li><i class="fa-solid fa-clipboard-user" style="padding: 0px 10px 0px 14px;"></i>Register</li></a>
+                    </ul>
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-----Main Navigation Bar--->
+        <div class="main_navbar">
+            <div class="header_logo">
+                <a href="#"><img src="image/logo.png" alt=""></a>
+                <a href="#"></a><h1>Thimphu Tower</h1></a>
+                
+            </div>
+            <div class="toggole">
+				<i class="fa-solid fa-bars" onclick="showbarToggole()"></i>
+				<i class="fa-solid fa-xmark" onclick="hidebarToggole()" id="Xbar"></i>				
+			</div>
+            <div class="navbar">
+                <ul class="main_manu">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="rooms.php">Rooms</li>
+                    <li><a href="activite.php">Activities</li>                 
+                    <li><a href="about_us.php">About us</li>
+                    <li><a href="downloads.php">Downloads</a>
+                    <li><a href="gallery.php">Gallery</li>
+                    <li><a href="contact.php">Contact</a>
+
+                        <!-- <ul class="Dropdown">
+                            <a href="#"><li>Our Approch</li></a>
+                            <a href="#"><li>How we Work</li></a>
+                        </ul>  -->
+                    </li>
+                    <a href="360tour.php" style="display: none;"><button class="nav_btn">Virtual Tour <i class="fa-solid fa-street-view"></i> </button></a>
+
+
+                </ul>
+                
+            </div>
+            
+        </div>
+    </header>
+<script src="asset/java/main_script"></script>
+
+</body>
+</html>
+    <section class="header_slider">
+                
+        <div class="slideshow-container">
+
+            <div class="mySlides fade slider1">
+                <div class="slider1 background_slide1">
+                    <div class="font_text">
+                        <p>Welcome to</p>
+                        <h1>Thimphu Tower Hotel</h1>
+                        <p class="details">Located in the heart of the city, we have 28 rooms overlooking the Clock tower square and the Changlimithang stadium.</p>
+                        <!-- <p class="details">Thimphu Tower is a great choice for travellers looking for a 3 star hotel in Thimphu.This Hotel stands out as one of the highly recommended hotel in Thimphu and is recommended by our guests.</p> -->
+                        <a href="rooms.php"><button>Book Now</button></a>
+                        <a href="rooms.php"><button>All Rooms</button></a>
+                    </div>
+                    <div class="font_image">
+                        <!-- <img src="image/banner-_1.png" alt=""> -->
+                         <img src="image/banner-_new_1.png" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade slider1">
+                <div class="slider1 background_slide2">
+                    <div class="font_text">
+                        <p>We look forward for your visit.</p>
+                        <h1>Thimphu Tower Hotel</h1>
+                        <p class="details">Thimphu Tower is a great choice for travellers looking for a 3 star hotel in Thimphu.This Hotel stands out as one of the highly recommended hotel in Thimphu and is recommended by our guests. Our best rooms available for your vacation.</p>
+                        <a href="rooms.php"><button>Book Now</button></a>
+                        <a href="rooms.php"><button>All Rooms</button></a>
+                    </div>
+                    <div class="font_image">
+                        <!-- <img src="image/banner-_1.png" alt=""> -->
+                        <img src="image/banner-_new_1.png" alt="" loading="lazy">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade slider1">
+                <div class="slider1 background_slide3">
+                    <div class="font_text">
+                        <p>Experience our dining venues.</p>
+                        <h1>Thimphu Tower Hotel</h1>
+                        <p class="details">If you are looking for a delicious and refreshing food, specially curated for you as per your choice, all I want to convey that you are welcome to our Thimphu Tower
+                            Hotel where we have crafted some of the best foods across all cuisines. </p>
+                        <a href="rooms.php"><button>Book Now</button></a>
+                        <a href="rooms.php"><button>All Rooms</button></a>
+                    </div>
+                    <div class="font_image">
+                        <!-- <img src="image/banner-_1.png" alt=""> -->
+                        <img src="image/banner-_new_1.png" alt="" loading="lazy">
+
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+    </section>
+
+    <section class="Search_Module">
+            
+        <form id="room_inquiry_form" method="post">
+    <div class="search_box">
+        <div class="search_header">
+            <h3>Submit your room inquiry to get a quick response from us.</h3>
+        </div>
+        <div class="input_box">
+            <div class="laval">
+                <label for="inquiry_name">Full Name</label><br>
+                <input type="text" id="inquiry_name" name="name" placeholder="Enter Name" required>
+            </div> 
+            <div class="laval">
+                <label for="inquiry_email">Email</label><br>
+                <input type="email" id="inquiry_email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div class="laval">
+                <label for="inquiry_room">Room</label><br>
+                <select id="inquiry_room" name="room" required>
+                    <option value="">Select Here</option>
+                    <option value="0">0</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                </select>
+            </div> 
+            <div class="laval">
+                <label for="inquiry_adult">Adult</label><br>
+                <select id="inquiry_adult" name="adult" required>
+                    <option value="">Select Here</option>
+                    <!-- Repeat 0–10 -->
+                    <option value="0">0</option>
+                    <option value="1">01</option>
+                   <option value="2">02</option>
+                   <option value="3">03</option>
+                   <option value="4">04</option>
+                   <option value="5">05</option>
+                   <option value="6">06</option>
+                   <option value="7">07</option>
+                   <option value="8">08</option>
+                   <option value="9">09</option>
+                    <option value="10">10</option>
+                </select>
+            </div>          
+            <div class="laval">
+                <label for="inquiry_children">Children</label><br>
+                <select id="inquiry_children" name="children" required>
+                    <option value="">Select Here</option>
+                    <!-- Repeat 0–10 -->
+                    <option value="0">0</option>
+                   <option value="1">01</option>
+                   <option value="2">02</option>
+                   <option value="3">03</option>
+                   <option value="4">04</option>
+                   <option value="5">05</option>
+                   <option value="6">06</option>
+                   <option value="7">07</option>
+                   <option value="8">08</option>
+                   <option value="9">09</option>
+                    <option value="10">10</option>
+                </select>
+            </div>            
+            <div class="laval">
+                <label for="arrival_date">Arrival Date</label><br>
+                <input type="date" id="arrival_date" name="arrival_date" required>
+            </div> 
+            <div class="laval">
+                <label for="departure_date">Departure Date</label><br>
+                <input type="date" id="departure_date" name="departure_date" required>
+            </div>
+            <div class="laval">
+                <label>&nbsp;</label><br>
+                <button type="submit" id="submit_inquiry">Submit</button>
+            </div> 
+        </div>
+    </div>
+</form>
+
+<!-- Response Box -->
+<div id="inquiry_response" style="margin-top: 15px;"></div>
+
+    </section>
+
+    <section class="about_us">        
+        <div class="about_us_description">
+            <div class="about_us_header">
+                <h1>Thimphu Tower Hotel Since 2015</h1>
+                <p>We provide accommodation services since 2015</p><br>
+                <p>Located in the heart of the city, we have 28 rooms overlooking the Clock tower square and the Changlimithang stadium. Our friendly staff and clean rooms are at your disposal 24 hrs a day. Please drop in whenever you visit Thimphu.</p>
+            </div>
+            <div class="about_us_image">
+                <img src="image/team.jpg" alt="" loading="lazy">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms">
+        <div class="rooms_header">
+            <h1>Check Our Best Selling Room</h1>
+            <p>Our best rooms available for your vacation.</p>
+        </div>
+        <div class="rooms_box">
+            <div class="all_rooms">
+                <div class="room_box_width">
+                    <div class="rooms1">
+                        <img src="image/bed8.jpg" alt="" loading="lazy">
+                        <div class="rooms_text">
+                            <div class="room_info">
+                                <h1>Deluxe Single Room</h1>
+                                <p>4500.00 (NU)</p>
+                            </div>
+                            <div class="room_all_info">
+                                <p class="P_p">Our best rooms available for your vacation.</p>
+                                <p><i class="fa-regular fa-circle-check"></i>2 Adults</p>
+                                <p><i class="fa-regular fa-circle-check"></i>1 Childern</p>
+                                <p><i class="fa-regular fa-circle-check"></i>Single</p>
+
+                            </div>
+                            <div class="room_info_btn">
+                                <a href="del_single.php"><button>Book Now</button></a>
+                                <a href="del_single.php"><button>Details</button></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room_box_width">
+
+                    <div class="rooms1">
+                        <img src="image/bed9.jpg" alt="" loading="lazy">
+                        <div class="rooms_text">
+                            <div class="room_info">
+                                <h1>Deluxe Double Room</h1>
+                                <p>5000.00 (NU)</p>
+
+                                
+                            </div>
+                            <div class="room_all_info">
+                                <p class="P_p">Our best rooms available for your vacation.</p>
+                                <p><i class="fa-regular fa-circle-check"></i>5 Adults</p>
+                                <p><i class="fa-regular fa-circle-check"></i>1 Childern</p>
+                                <p><i class="fa-regular fa-circle-check"></i>Double Size</p>
+
+                            </div>
+                            <div class="room_info_btn">
+                                <a href="del_double.php"><button>Book Now</button></a>
+                                <a href="del_double.php"><button>Details</button></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="room_box_width">
+                    <div class="rooms1">
+                        <img src="image/bed11.jpg" alt="" loading="lazy">
+                        <div class="rooms_text">
+                            <div class="room_info">
+                                <h1>Premium Single Room</h1>
+                                <p>5500.00 (NU)</p>
+
+                                
+                            </div>
+                            <div class="room_all_info">
+                                <p class="P_p">Our best rooms available for your vacation.</p>
+                                <p><i class="fa-regular fa-circle-check"></i>2 Adults</p>
+                                <p><i class="fa-regular fa-circle-check"></i>2 Childern</p>
+                                <p><i class="fa-regular fa-circle-check"></i>Double</p>
+
+                            </div>
+                            <div class="room_info_btn">
+                                <a href="pre_single.php"><button>Book Now</button></a>
+                                <a href="pre_single.php"><button>Details</button></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="room_box_width">
+                    <div class="rooms1">
+                        <img src="image/bed4.jpg" alt="" loading="lazy">
+                        <div class="rooms_text">
+                            <div class="room_info">
+                                <h1>Premium Dobule Room</h1>
+                                <p>6000.00 (NU)</p>
+
+                                
+                            </div>
+                            <div class="room_all_info">
+                                <p class="P_p">Our best rooms available for your vacation.</p>
+                                <p><i class="fa-regular fa-circle-check"></i>2 Adults</p>
+                                <p><i class="fa-regular fa-circle-check"></i>2 Childern</p>
+                                <p><i class="fa-regular fa-circle-check"></i>2 Double</p>
+
+                            </div>
+                            <div class="room_info_btn">
+                                <a href="pre_double.php"><button>Book Now</button></a>
+                                <a href="pre_double.php"><button>Details</button></a>
+
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!--         
+        <div class="rooms_box rooms_box2">
+            <div class="all_rooms">
+                <div class="room_box_width">
+                    <div class="rooms1">
+                        <img src="image/bed5.jpg" alt="">
+                        <div class="rooms_text">
+                            <div class="room_info">
+                                <h1>Super Deluxe Triple</h1>
+                                <p><i class="fa-solid fa-dollar-sign"></i>500/ Per Night</p>                            
+                            </div>
+                            <div class="room_all_info">
+                                <p class="P_p">Our best rooms available for your vacation.</p>
+                                <p><i class="fa-regular fa-circle-check"></i>2 Adults</p>
+                                <p><i class="fa-regular fa-circle-check"></i>1 Childern</p>
+                                <p><i class="fa-regular fa-circle-check"></i>Single</p>
+                            </div>
+                            <div class="room_info_btn">
+                                <a href="#"><button>Book Now</button></a>
+                                <a href="#"><button>Details</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="room_box_width">
+                    
+                <div class="rooms1">
+                    <img src="image/bed9.jpg" alt="">
+                    <div class="rooms_text">
+                        <div class="room_info">
+                            <h1>Super Deluxe</h1>
+                            <p><i class="fa-solid fa-dollar-sign"></i>500/ Per Night</p>                            
+                        </div>
+                        <div class="room_all_info">
+                            <p class="P_p">Our best rooms available for your vacation.</p>
+                            <p><i class="fa-regular fa-circle-check"></i>5 Adults</p>
+                            <p><i class="fa-regular fa-circle-check"></i>1 Childern</p>
+                            <p><i class="fa-regular fa-circle-check"></i>King Size</p>
+
+                        </div>
+                        <div class="room_info_btn">
+                            <a href="#"><button>Book Now</button></a>
+                            <a href="#"><button>Details</button></a>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="room_box_width">
+                    
+                <div class="rooms1">
+                    <img src="image/bed6.jpg" alt="">
+                    <div class="rooms_text">
+                        <div class="room_info">
+                            <h1>Economy Deluxe</h1>
+                            <p><i class="fa-solid fa-dollar-sign"></i>500/ Per Night</p>                            
+                        </div>
+                        <div class="room_all_info">
+                            <p class="P_p">Our best rooms available for your vacation.</p>
+                            <p><i class="fa-regular fa-circle-check"></i>2 Adults</p>
+                            <p><i class="fa-regular fa-circle-check"></i>2 Childern</p>
+                            <p><i class="fa-regular fa-circle-check"></i>Double</p>
+                        </div>
+                        <div class="room_info_btn">
+                            <a href="#"><button>Book Now</button></a>
+                            <a href="#"><button>Details</button></a>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="room_box_width">
+                    
+                <div class="rooms1">
+                    <img src="image/bed11.jpg" alt="">
+                    <div class="rooms_text">
+                        <div class="room_info">
+                            <h1>Presidential Suite</h1>
+                            <p><i class="fa-solid fa-dollar-sign"></i>1000/ Per Night</p>                            
+                        </div>
+                        <div class="room_all_info">
+                            <p class="P_p">Our best rooms available for your vacation.</p>
+                            <p><i class="fa-regular fa-circle-check"></i>2 Adults</p>
+                            <p><i class="fa-regular fa-circle-check"></i>2 Childern</p>
+                            <p><i class="fa-regular fa-circle-check"></i>2 Double</p>
+                        </div>
+                        <div class="room_info_btn">
+                            <a href="#"><button>Book Now</button></a>
+                            <a href="#"><button>Details</button></a>
+                        </div>
+                    </div>
+                </div>                    
+                </div>
+
+               
+            </div>
+        </div> -->
+    </section>
+
+    <section class="faciltes">
+        <div class="faciltes_header">
+            <h1>Our Facilties</h1>
+            <div class="facilites_services">
+                <div class="facilites_liner">
+                    <div class="serve01">
+                        <i class="fa-solid fa-wifi"></i>
+                        <p>Free High Speed Internet (WiFi)</p>                    
+                    </div>
+                    <div class="serve01">
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Free breakfast</p>                    
+                    </div>
+                    <div class="serve01">
+                        <i class="fa-solid fa-suitcase-rolling"></i>
+                        <p>Baggage storage</p>                    
+                    </div>
+                    
+                    <div class="serve01">
+                        <i class="fa-solid fa-hand-sparkles"></i>
+                        <p>Dry cleaning</p>                    
+                    </div>
+                </div>
+
+                <div class="facilites_liner">
+                    
+                    <div class="serve01">
+                        <i class="fa-solid fa-wine-glass"></i>
+                        <p>Bar / lounge</p>                    
+                    </div>
+                
+                    <div class="serve01">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <p>Breakfast buffet</p>                    
+                    </div>
+                    <div class="serve01">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <p>Fitness GYM</p>                    
+                    </div>
+                    <div class="serve01">
+                        <i class="fa-solid fa-wifi"></i>
+                        <p>WiFi</p>                    
+                    </div>
+                </div>                                               
+                <div class="facilites_liner"> 
+                    <div class="serve01">
+                        <i class="fa-solid fa-plane"></i>
+                        <p>Airport transportation</p>                    
+                    </div>
+                    <div class="serve01">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <p>Concierge</p>                    
+                    </div>
+                                                                    
+                    <div class="serve01">
+                        <i class="fa-solid fa-shirt"></i>
+                        <p>Laundry service</p>                    
+                    </div>
+                    
+                    <div class="serve01">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <p>Restaurant</p>                    
+                    </div>
+                </div>                                               
+                <div class="facilites_liner"> 
+                    
+                    <div class="serve01">
+                        <i class="fa-solid fa-car-side"></i>
+                        <p>Car hire</p>                    
+                    </div>
+                    <div class="serve01">
+                        <i class="fa-solid fa-vest"></i>
+                        <p>Ironing service</p>                    
+                    </div>
+                    <div class="serve01">
+                        <i class="fa-solid fa-temperature-low"></i>
+                        <p>Air conditioning</p>                    
+                    </div>              
+                    <div class="serve01">
+                        <i class="fa-solid fa-door-open"></i>
+                        <p>Room service</p>                    
+                    </div>
+                </div>
+
+                <div class="facilites_liner"> 
+                    <div class="serve01">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p>Safe Privacy</p>                    
+                    </div>
+                
+                    <div class="serve01">
+                        <i class="fa-solid fa-tv"></i>
+                        <p>Flatscreen TV</p>                    
+                    </div>
+                    
+                    <div class="serve01">
+                        <i class="fa-solid fa-people-roof"></i>
+                        <p>Family rooms</p>                    
+                    </div>
+                
+                    <div class="serve01">
+                        <i class="fa-solid fa-ban-smoking"></i>
+                        <p>Non-smoking rooms</p>                    
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our_gallary">
+        <div class="gallary_header">
+            <h1>Our Gallery</h1>
+       
+            <div class="gallary_button" id="myDIV">
+                <button onclick="forBtn1()" class="fo1 btn active">All Photo</button>
+                <button onclick="forBtn2()" class="fo2 btn">Couple</button>
+                <button onclick="forBtn3()" class="fo3 btn">Single</button>
+                <button onclick="forBtn4()" class="fo4 btn">Double</button>
+                <button onclick="forBtn5()" class="fo5 btn">Executive</button>
+                <button onclick="forBtn6()" class="fo6 btn">Events</button>
+                <button onclick="forBtn7()" class="fo6 btn" style="margin-right: 0;">Dining</button>
+                
+            </div>
+        </div>
+        <div class="photo_gallary">
+            <div class="all_rooms_photo">
+                <div class="gallary_photo_all room_btn_access">
+                    <div class="photos">
+                        <a href="image/bed1.jpg" target="_blank"><img src="image/bed1.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed11.jpg" target="_blank"><img src="image/bed11.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed13.jpg" target="_blank"><img src="image/bed13.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed2.jpg" target="_blank"><img src="image/bed2.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>           
+                </div>
+                <div class="gallary_photo_all">
+                    <div class="photos">
+                        <a href="image/bed3.avif" target="_blank"><img src="image/bed3.avif" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed4.jpg" target="_blank"><img src="image/bed4.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed5.jpg" target="_blank"><img src="image/bed5.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed6.jpg" target="_blank"><img src="image/bed6.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>           
+                </div>
+                <div class="gallary_photo_all last_chiled">
+                    <div class="photos">
+                        <a href="image/bed7.jpg" target="_blank"><img src="image/bed7.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed8.jpg" target="_blank"><img src="image/bed8.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed9.jpg" target="_blank"><img src="image/bed9.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/deb10.jpg" target="_blank"><img src="image/deb10.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>           
+                </div>
+
+            </div>            
+            <div class="couple_room">
+                <div class="gallary_photo_all">
+                    <div class="photos">
+                        <a href="image/bed3.avif" target="_blank"><img src="image/bed3.avif" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed4.jpg" target="_blank"><img src="image/bed4.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed5.jpg" target="_blank"><img src="image/bed5.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>
+                    <div class="photos">
+                        <a href="image/bed6.jpg" target="_blank"><img src="image/bed6.jpg" alt="" class="photo" loading="lazy"></a>
+                    </div>         
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section class="hotel_statisties">
+        <div class="statistics_header">
+            <h1>Hotel Statistics</h1>
+        </div>
+        <div class="counter_contaner">
+            <div class="counterbox">
+                <h1 class="counter" data-value="5000">5000</h1>
+                <p>Guest Stay</p>
+            </div>
+            <div class="counterbox">
+                <h1 class="counter" data-value="1200">1200</h1>
+                <p>Book Room</p>
+            </div>
+            <div class="counterbox">
+                <h1 class="counter" data-value="4100">4100</h1>
+                <p>Member Stay</p>
+            </div>
+            <div class="counterbox">
+                <h1 class="counter" data-value="750">750</h1>
+                <p>Meals Served</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="Review_news">
+        <div class="review">
+            <div class="review_news">
+                <div class="news_header">
+                    <h1> Read Our Most Viewed Article</h1>
+                </div>
+                <a href="#"><div class="news_box1">
+                    <img src="image/news1.jpg" alt="" style="width: 147px;" loading="lazy">
+                    <div class="news_title" style="text-decoration: none;">
+                        <h4>Bhutan For The Novice Visitor</h4>
+                        <p>The new tourist season in Bhutan is headed for a more user-friendly experience <br><span>Read more</span></p>
+                    </div>
+                </div></a>
+                <a href="#"><div class="news_box1">
+                    <img src="image/news2.jpg" alt="" style="width: 147px;" loading="lazy">
+                    <div class="news_title" style="text-decoration: none;">
+                        <h4>Bhutan Through the Lens of a Photographer</h4>
+                        <p>The majesty of this ancient Himalayan kingdom remains a shining allurement <br><span>Read more</span></p>
+                    </div>
+                </div></a>
+                <a href="#"><div class="news_box1">
+                    <img src="image/news3.jpg" alt="" loading="lazy">
+                    <div class="news_title" style="text-decoration: none;">
+                        <h4>Places To Visit In Thimphur</h4>
+                        <p>The new tourist season in Bhutan is headed for a more user-friendly experience <br><span>Read more</span></p>
+                    </div>
+                </div></a>
+                <a href="#"><div class="news_box1">
+                    <img src="image/news5.jpg" alt="" loading="lazy">
+                    <div class="news_title" style="text-decoration: none;">
+                        <h4>Best Visit In Thimphu</h4>
+                        <p>The new tourist season in Bhutan is headed for a more user-friendly experience <br><span>Read more</span></p>
+                    </div>
+                </div></a>
+
+            </div>
+            <div class="review_box">
+                <div class="reviews_header">
+                    <h1>What Says Our Customer</h1>
+                    <div class="review_button">
+                        <button onclick="nextbtn()">&#10094</button>
+                        <button onclick="prvbtn()">&#10095</button>
+                    </div>
+                </div>
+                
+                <div class="customer_reviesw">
+                    <div class="review_slider">
+                        <div class="customer_text reviewone">
+                            <img src="image/man_icon.jpg" alt="" loading="lazy">
+                            <h3>Sanjay Patel</h3>
+                            <span>- - -</span>
+                            <p>The place is just fantastic & the ambiance of this place is just great. The rooms in this property are just awesome & their services were just satisfactory as well. I had fab experience staying over here.</p>
+                        </div>
+                        <div class="customer_text reviewtwo">
+                            <img src="image/woman_icon.jpg" alt="" loading="lazy">
+                            <h3>Adin B</h3>
+                            <span>- - -</span>
+                            <p>Thimphu Towers was the perfect home base for the Harvard-Bhutan Trek. My room was very comfortable and had a wonderful view of the central square. The hotel's food was also quite good!</p>
+                        </div>                       
+                    </div>                   
+                </div>
+            </div>            
+        </div>
+    </section>
+    <div id="customAlertBox">
+    <div id="customAlertMessage"></div>
+    <button id="customAlertOk">OK</button>
+</div>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function () {
+             // Function to show custom alert box
+      function showCustomAlert(message, type = 'error') {
+        const box = $('#customAlertBox');
+        const msg = $('#customAlertMessage');
+    
+        box.removeClass('error success').addClass(type);
+        msg.text(message);
+        box.fadeIn();
+    
+        // Clear existing timer
+        clearTimeout(box.data('timeout'));
+    
+        // Hide after 5 seconds
+        const timeout = setTimeout(() => {
+            box.fadeOut();
+        }, 5000);
+        box.data('timeout', timeout);
+    }
+        
+        // Close manually on OK click
+        $('#customAlertOk').on('click', function () {
+            $('#customAlertBox').fadeOut();
+        });
+        $('#room_inquiry_form').on('submit', function (e) {
+            e.preventDefault();
+    
+            const name = $('#inquiry_name').val().trim();
+            const email = $('#inquiry_email').val().trim();
+            const room = $('#inquiry_room').val();
+            const adult = $('#inquiry_adult').val();
+            const children = $('#inquiry_children').val();
+            const arrival = $('#arrival_date').val();
+            const departure = $('#departure_date').val();
+    
+            let errors = [];
+    
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+            if (name === '') errors.push("Name is required.");
+            if (!emailRegex.test(email)) errors.push("Invalid email format.");
+            if (room === '') errors.push("Please select a room.");
+            if (adult === '') errors.push("Please select number of adults.");
+            if (children === '') errors.push("Please select number of children.");
+            if (arrival === '') errors.push("Arrival date is required.");
+            if (departure === '') errors.push("Departure date is required.");
+            if (arrival !== '' && departure !== '' && ((new Date(arrival) > new Date(departure)) || (new Date(arrival) == new Date(departure))) ) {
+                errors.push("Departure date must be after arrival date.");
+            }
+    
+            if (errors.length > 0) {
+                $('#inquiry_response')
+                    .html(`<div style="color:red;"><strong>Error:</strong><br>${errors.join('<br>')}</div>`)
+                    .fadeIn().delay(5000).fadeOut();
+                   let resmsg = errors.join('<br>');
+                    showCustomAlert(resmsg, 'error');
+                return;
+            }
+    
+            $.ajax({
+                url: 'inquiry_submit.php',
+                type: 'POST',
+                data: {
+                    name,
+                    email,
+                    room,
+                    adult,
+                    children,
+                    arrival_date: arrival,
+                    departure_date: departure
+                },
+                dataType: 'json',
+                success: function (res) {
+                    if (res.status === 'success') {
+                        // $('#inquiry_response')
+                        //     .html(`<div style="color:green;"><strong>✅ ${res.message}</strong></div>`)
+                        //     .fadeIn().delay(5000).fadeOut();
+                            showCustomAlert(res.message, 'success');
+                        $('#room_inquiry_form')[0].reset();
+                    } else {
+                        // $('#inquiry_response')
+                        //     .html(`<div style="color:red;"><strong>❌ ${res.message}</strong></div>`)
+                        //     .fadeIn().delay(5000).fadeOut();
+                            showCustomAlert(res.message, 'success');
+                    }
+                },
+                error: function (xhr, status, err) {
+                    // $('#inquiry_response')
+                    //     .html(`<div style="color:red;"><strong>⚠ Server error:</strong> ${err}</div>`)
+                    //     .fadeIn().delay(5000).fadeOut();
+                        showCustomAlert(res.message, 'error');
+                }
+            });
+        });
+    });
+    </script>
+
+
+    <footer>
+    <div class="footer_class">
+        <div class="about_us footer_div">
+            <h1>About Thimpu Tower Hotel</h1>
+            <p>Located in the heart of the city, we have 28 rooms overlooking the Clock tower square and the Changlimithang stadium. <a href="#">Read More</a></p>
+
+            <div class="social_icon">
+                <a href="https://www.facebook.com/profile.php?id=100063471611976&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+
+        </div>
+        <div class="quick_link footer_div">
+            <h1>Quick Link</h1>
+            <ul>
+                <li><a href="index.php"><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                <li><a href="rooms.php"><i class="fa-solid fa-angle-right"></i>Room</a></li>
+                <li><a href="activite.php"><i class="fa-solid fa-angle-right"></i>Activities</a></li>
+                <li><a href="about_us.php"><i class="fa-solid fa-angle-right"></i>About us</a></li>
+                <li><a href="contact.php"><i class="fa-solid fa-angle-right"></i>Contact</a></li>
+                <li><a href="gallary.php"><i class="fa-solid fa-angle-right"></i>Gallary</a></li>
+
+            </ul>
+            
+        </div>
+        <div class="Address footer_div">
+            <h1>Address</h1>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-house-chimney"></i></p>
+                <p>Clock Tower Square <br>Thimpu, Bhutan, 00975</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-tty"></i></p>
+                <p>+975 2 335 367</p>
+            </div>
+            <div class="address_location">                
+                <p><i class="fa-solid fa-envelope-circle-check"></i></p>
+                <p>thimphutowers@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="subscribe footer_div">
+            <h1>Newsletter</h1>
+            <p>If you have any questions or need help contact with our team.</p>
+            <div class="input">
+                <input type="text" placeholder="Enter your Email">
+                <button>Subscribe Now</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="power_footer">@2024 Developed & maintained by <a href="https://l2nsoft.com/" target="_blank">L2N Private Limited</a>, Powered by Paperles</div>
+</footer>
+
+
+
+
+<script src="asset/java/myscript.js"></script>
+<script src="asset/java/sliderscript.js"></script>
+<script src="asset/java/counterscript.js"></script>
+
+</body>
+</html>

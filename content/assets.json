@@ -1,0 +1,410 @@
+[
+ {
+  "key": "facade-square",
+  "file": "original/main.jpg",
+  "source": "https://thimphutower.com/image/main.jpg",
+  "category": "building",
+  "alt": "Thimphu Tower Hotel and the Clock Tower reflected in the pool on Clock Tower Square",
+  "caption": null
+ },
+ {
+  "key": "room-deluxe-single",
+  "file": "original/bed8.jpg",
+  "source": "https://thimphutower.com/image/bed8.jpg",
+  "category": "rooms",
+  "alt": "Deluxe Single Room with a double bed, orange bench and window chairs",
+  "caption": null
+ },
+ {
+  "key": "room-deluxe-double",
+  "file": "original/bed9.jpg",
+  "source": "https://thimphutower.com/image/bed9.jpg",
+  "category": "rooms",
+  "alt": "Deluxe Double Room with two beds and blue-striped runners",
+  "caption": null
+ },
+ {
+  "key": "room-premium-single",
+  "file": "original/bed11.jpg",
+  "source": "https://thimphutower.com/image/bed11.jpg",
+  "category": "rooms",
+  "alt": "Premium Single Room with twin beds beneath a timber headboard",
+  "caption": null
+ },
+ {
+  "key": "room-premium-double",
+  "file": "original/bed4.jpg",
+  "source": "https://thimphutower.com/image/bed4.jpg",
+  "category": "rooms",
+  "alt": "Premium Double Room with a large bed facing traditional Bhutanese windows",
+  "caption": null
+ },
+ {
+  "key": "room-bay-view",
+  "file": "original/bed2.jpg",
+  "source": "https://thimphutower.com/image/bed2.jpg",
+  "category": "rooms",
+  "alt": "Corner room with a timber ceiling and a wall of windows over Thimphu",
+  "caption": "Corner room at Thimphu Tower"
+ },
+ {
+  "key": "room-twin-view",
+  "file": "original/bed5.jpg",
+  "source": "https://thimphutower.com/image/bed5.jpg",
+  "category": "rooms",
+  "alt": "Premium room with a desk by full-height windows over the city",
+  "caption": "The Premium category"
+ },
+ {
+  "key": "room-twin-timber",
+  "file": "original/bed6.jpg",
+  "source": "https://thimphutower.com/image/bed6.jpg",
+  "category": "rooms",
+  "alt": "Twin room under a pitched timber ceiling",
+  "caption": null
+ },
+ {
+  "key": "room-twin-light",
+  "file": "original/bed7.jpg",
+  "source": "https://thimphutower.com/image/bed7.jpg",
+  "category": "rooms",
+  "alt": "Bright twin room with sheer curtains and a writing desk",
+  "caption": null
+ },
+ {
+  "key": "room-twin-gold",
+  "file": "original/bed13.jpg",
+  "source": "https://thimphutower.com/image/bed13.jpg",
+  "category": "rooms",
+  "alt": "Twin room with gold bed runners and reading lamps",
+  "caption": null
+ },
+ {
+  "key": "room-double-red",
+  "file": "original/deb10.jpg",
+  "source": "https://thimphutower.com/image/deb10.jpg",
+  "category": "rooms",
+  "alt": "Double room with a red runner, bench and window seating",
+  "caption": null
+ },
+ {
+  "key": "activity-buddha",
+  "file": "original/activity-1.png",
+  "source": "https://thimphutower.com/image/activites%20(1).png",
+  "category": null,
+  "alt": "The golden Buddha Dordenma statue above Thimphu",
+  "caption": null
+ },
+ {
+  "key": "activity-astrology",
+  "file": "original/activity-2.png",
+  "source": "https://thimphutower.com/image/activites%20(2).png",
+  "category": null,
+  "alt": "Monks in the courtyard of a traditional Bhutanese building",
+  "caption": null
+ },
+ {
+  "key": "activity-festival",
+  "file": "original/activity-3.png",
+  "source": "https://thimphutower.com/image/activites%20(3).png",
+  "category": null,
+  "alt": "A masked dancer in a red and gold costume at a tshechu festival",
+  "caption": null
+ },
+ {
+  "key": "activity-stamps",
+  "file": "original/activity-4.png",
+  "source": "https://thimphutower.com/image/activites%20(4).png",
+  "category": null,
+  "alt": "Travellers posing together in the Himalayan snow",
+  "caption": null
+ },
+ {
+  "key": "logo",
+  "file": "original/logo.png",
+  "source": "https://thimphutower.com/image/logo.png",
+  "category": null,
+  "alt": "Thimphu Tower Hotel",
+  "caption": null
+ },
+ {
+  "key": "dining-long-table",
+  "file": "original/gallery/1767670082_494765914_1252751876850521_4393599997100111027_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767670082_494765914_1252751876850521_4393599997100111027_n.jpg",
+  "category": "dining",
+  "alt": "The restaurant laid with a long banquet table",
+  "caption": "All set for our Romanian guests"
+ },
+ {
+  "key": "festival-from-window",
+  "file": "original/gallery/1767670586_496498837_1259314556194253_561492078418222543_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767670586_496498837_1259314556194253_561492078418222543_n.jpg",
+  "category": "square",
+  "alt": "A festival crowd on Clock Tower Square seen through a carved hotel window",
+  "caption": null
+ },
+ {
+  "key": "dining-square-view",
+  "file": "original/gallery/1767670801_31131669_809250812617469_2632452946834489344_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767670801_31131669_809250812617469_2632452946834489344_n.jpg",
+  "category": "dining",
+  "alt": "The dining room with tables set along windows over the square",
+  "caption": "Our dining table"
+ },
+ {
+  "key": "team-stairs",
+  "file": "original/gallery/1767671049_492073458_1235540431904999_3131448820363007290_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767671049_492073458_1235540431904999_3131448820363007290_n.jpg",
+  "category": "people",
+  "alt": "Team Thimphu Tower in uniform on the front steps",
+  "caption": null
+ },
+ {
+  "key": "team-entrance",
+  "file": "original/gallery/1767671103_491099446_1235540328571676_1560480471781771478_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767671103_491099446_1235540328571676_1560480471781771478_n.jpg",
+  "category": "people",
+  "alt": "Team Thimphu Tower gathered at the entrance",
+  "caption": null
+ },
+ {
+  "key": "cyclists-square",
+  "file": "original/gallery/1767671146_490448984_1230758305716545_3108714362324499133_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767671146_490448984_1230758305716545_3108714362324499133_n.jpg",
+  "category": "square",
+  "alt": "Cyclists resting on Clock Tower Square in front of the hotel",
+  "caption": null
+ },
+ {
+  "key": "team-with-guest",
+  "file": "original/gallery/1767671712_489930134_1229261662532876_3216232103948397678_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767671712_489930134_1229261662532876_3216232103948397678_n.jpg",
+  "category": "people",
+  "alt": "The hotel team celebrating together",
+  "caption": null
+ },
+ {
+  "key": "momo-plate",
+  "file": "original/gallery/1767672386_118947971_1454837428058801_2812233384787870651_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767672386_118947971_1454837428058801_2812233384787870651_n.jpg",
+  "category": "dining",
+  "alt": "Plates of momos and chilli dishes",
+  "caption": null
+ },
+ {
+  "key": "veggie-harvest",
+  "file": "original/gallery/1767672784_107905916_1404313453111199_4169450228955264342_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767672784_107905916_1404313453111199_4169450228955264342_n.jpg",
+  "category": "people",
+  "alt": "A team member holding freshly harvested cabbages",
+  "caption": "First vegetable harvest for team Thimphu Tower"
+ },
+ {
+  "key": "facade-dusk",
+  "file": "original/gallery/1767672834_95734373_1350831288459416_4002169406812585984_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767672834_95734373_1350831288459416_4002169406812585984_n.jpg",
+  "category": "building",
+  "alt": "The hotel facade at dusk above the square",
+  "caption": null
+ },
+ {
+  "key": "team-group",
+  "file": "original/gallery/1767672975_78095852_1221192521423294_1320255655252066304_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767672975_78095852_1221192521423294_1320255655252066304_n.jpg",
+  "category": "people",
+  "alt": "The hotel team together in national dress",
+  "caption": null
+ },
+ {
+  "key": "team-staircase",
+  "file": "original/gallery/1767673105_77309734_1221192348089978_4620803319168761856_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673105_77309734_1221192348089978_4620803319168761856_n.jpg",
+  "category": "people",
+  "alt": "The team assembled on the main staircase",
+  "caption": null
+ },
+ {
+  "key": "go-green-baskets",
+  "file": "original/gallery/1767673317_76751430_1202062763336270_7977359534173716480_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673317_76751430_1202062763336270_7977359534173716480_n.jpg",
+  "category": "people",
+  "alt": "Stacks of recycled-bottle laundry baskets",
+  "caption": "To cut plastic, our laundry baskets come from a women’s group in Samdrupjongkhar, made from recycled water bottles."
+ },
+ {
+  "key": "marathon-bib",
+  "file": "original/gallery/1767673367_74482917_1191587331050480_6986413358106804224_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673367_74482917_1191587331050480_6986413358106804224_n.jpg",
+  "category": "people",
+  "alt": "Race bib from the 2019 Thimphu Half Marathon",
+  "caption": "Coronation marathon"
+ },
+ {
+  "key": "run-to-give",
+  "file": "original/gallery/1767673427_70679347_1158696107672936_6238361146135412736_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673427_70679347_1158696107672936_6238361146135412736_n.jpg",
+  "category": "people",
+  "alt": "The team holding race numbers at a charity run",
+  "caption": "Team Thimphu Tower, Run to Give"
+ },
+ {
+  "key": "team-portrait",
+  "file": "original/gallery/1767673622_61795821_1077179225824625_5935966663626194944_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673622_61795821_1077179225824625_5935966663626194944_n.jpg",
+  "category": "people",
+  "alt": "Team Thimphu Tower on the staircase",
+  "caption": null
+ },
+ {
+  "key": "danish-guests",
+  "file": "original/gallery/1767673669_57038299_1044593362416545_8122823685577900032_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673669_57038299_1044593362416545_8122823685577900032_n.jpg",
+  "category": "people",
+  "alt": "A group of Danish guests with the hotel team",
+  "caption": "With a fabulous group of Danish guests"
+ },
+ {
+  "key": "harvard-trek",
+  "file": "original/gallery/1767673698_48930756_977398039136078_8187560937356525568_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673698_48930756_977398039136078_8187560937356525568_n.jpg",
+  "category": "people",
+  "alt": "Harvard Bhutan Trek 2019 banner hanging in the hotel",
+  "caption": null
+ },
+ {
+  "key": "harvest-crates",
+  "file": "original/gallery/1767673834_41078185_911335945742288_1323806107147173888_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767673834_41078185_911335945742288_1323806107147173888_n.jpg",
+  "category": "people",
+  "alt": "Wooden crates from the team’s harvest",
+  "caption": null
+ },
+ {
+  "key": "team-lobby",
+  "file": "original/gallery/1767674125_39906035_901965090012707_747273001824681984_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674125_39906035_901965090012707_747273001824681984_n.jpg",
+  "category": "people",
+  "alt": "The hotel team in the lobby",
+  "caption": null
+ },
+ {
+  "key": "staircase",
+  "file": "original/gallery/1767674184_31180062_809250832617467_4588361476971954176_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674184_31180062_809250832617467_4588361476971954176_n.jpg",
+  "category": "building",
+  "alt": "The twin staircase in the lobby",
+  "caption": null
+ },
+ {
+  "key": "facade-low",
+  "file": "original/gallery/1767674418_31166838_809250709284146_3665579915111038976_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674418_31166838_809250709284146_3665579915111038976_n.jpg",
+  "category": "building",
+  "alt": "Looking up at the hotel facade and its painted cornices",
+  "caption": null
+ },
+ {
+  "key": "facade-front",
+  "file": "original/gallery/1767674443_31131254_809250705950813_4917110162277269504_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674443_31131254_809250705950813_4917110162277269504_n.jpg",
+  "category": "building",
+  "alt": "The hotel facade facing Clock Tower Square",
+  "caption": null
+ },
+ {
+  "key": "film-awards-square",
+  "file": "original/gallery/1767674521_505401160_2769813366561194_7943630621196280162_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674521_505401160_2769813366561194_7943630621196280162_n.jpg",
+  "category": "square",
+  "alt": "The National Film Awards stage on Clock Tower Square",
+  "caption": null
+ },
+ {
+  "key": "breakfast-view",
+  "file": "original/gallery/1767674624_503849584_2765106027031928_1197448927430470_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674624_503849584_2765106027031928_1197448927430470_n.jpg",
+  "category": "dining",
+  "alt": "Breakfast laid on a balcony table above Clock Tower Square",
+  "caption": "Breakfast with a view of the town square"
+ },
+ {
+  "key": "restaurant-white",
+  "file": "original/gallery/1767674739_496925730_2742264382649426_532110953995945515_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674739_496925730_2742264382649426_532110953995945515_n.jpg",
+  "category": "dining",
+  "alt": "The restaurant laid with white tablecloths",
+  "caption": null
+ },
+ {
+  "key": "grilled-fish",
+  "file": "original/gallery/1767674822_497532702_2742557192620145_1804640439146004981_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674822_497532702_2742557192620145_1804640439146004981_n.jpg",
+  "category": "dining",
+  "alt": "Grilled fish served with vegetables",
+  "caption": "Grilled fish"
+ },
+ {
+  "key": "ngyencha",
+  "file": "original/gallery/1767674852_497472231_2742560249286506_2338373811433697988_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674852_497472231_2742560249286506_2338373811433697988_n.jpg",
+  "category": "square",
+  "alt": "A guest trying the yangchen, a Bhutanese hammered dulcimer, beside a musician",
+  "caption": "Guest playing the Bhutanese Ngyencha"
+ },
+ {
+  "key": "tarayana-fair",
+  "file": "original/gallery/1767674892_497675730_2742619155947282_5931502804799621722_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674892_497675730_2742619155947282_5931502804799621722_n.jpg",
+  "category": "square",
+  "alt": "Visitors at the Tarayana Fair on the square",
+  "caption": "Tarayana Fair"
+ },
+ {
+  "key": "tarayana-fair-2",
+  "file": "original/gallery/1767674919_497070669_2742618759280655_6123957217766765599_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674919_497070669_2742618759280655_6123957217766765599_n.jpg",
+  "category": "square",
+  "alt": "A statue overlooking the Tarayana Fair crowds",
+  "caption": "Tarayana Fair"
+ },
+ {
+  "key": "druk-superstar",
+  "file": "original/gallery/1767674947_497008070_2742619045947293_4568923081360456022_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674947_497008070_2742619045947293_4568923081360456022_n.jpg",
+  "category": "square",
+  "alt": "Crowds on Clock Tower Square for Druk Super Star",
+  "caption": "Druk Super Star"
+ },
+ {
+  "key": "gift-shop",
+  "file": "original/gallery/1767674984_497469422_2742898412586023_6529246193859241978_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767674984_497469422_2742898412586023_6529246193859241978_n.jpg",
+  "category": "building",
+  "alt": "Painted masks and thangkas in the gift shop",
+  "caption": "The gift shop at Thimphu Tower"
+ },
+ {
+  "key": "gift-shop-masks",
+  "file": "original/gallery/1767675031_497638908_2742898399252691_3079761573075146774_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767675031_497638908_2742898399252691_3079761573075146774_n.jpg",
+  "category": "building",
+  "alt": "Masks and statues in the gift shop display",
+  "caption": null
+ },
+ {
+  "key": "gift-shop-niches",
+  "file": "original/gallery/1767675065_497531245_2742898299252701_5615309148980587639_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767675065_497531245_2742898299252701_5615309148980587639_n.jpg",
+  "category": "building",
+  "alt": "Lit display niches in the gift shop",
+  "caption": null
+ },
+ {
+  "key": "snow-square",
+  "file": "original/gallery/1767675135_503635613_2764774017065129_3076144075818045171_n.jpg",
+  "source": "https://thimphutower.com/admin/db_image/gallery/1767675135_503635613_2764774017065129_3076144075818045171_n.jpg",
+  "category": "square",
+  "alt": "Clock Tower Square under snow, seen from above",
+  "caption": null
+ }
+]
